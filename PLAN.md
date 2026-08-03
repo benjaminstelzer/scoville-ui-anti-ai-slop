@@ -320,6 +320,10 @@ therefore does not retain a duplicate compatibility skill.
 - Migration validation: the canonical validator accepted the final Code,
   Scribe, and UI installable directories. The published Code and Scribe
   repositories each retain only `main`.
+- UI publication: `benjaminstelzer/scoville-ui-anti-ai-slop` is public on
+  `main`; its published tree contains this retained plan, repository
+  documentation, and the validated installable directory under the matching
+  frontmatter name.
 
 ## Completion criteria
 
@@ -345,4 +349,4 @@ therefore does not retain a duplicate compatibility skill.
 - [x] Fable review and revision loop.
 - [x] Final independent acceptance.
 - [x] Code-skill naming migration.
-- [ ] Final repository inspection.
+- [x] Final repository inspection.
