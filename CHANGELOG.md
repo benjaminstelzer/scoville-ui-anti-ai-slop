@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-08-03: Family documentation alignment
+
+### Changed
+
+- Aligned the README structure and installation guidance with Scoville Code and
+  Scoville Scribe.
+- Added the UI-specific explanation of the Scoville family name.
+- Kept published repository documentation focused on the installable skill and
+  its supported behavior.
+
+### Validation
+
+- The installable directory passed the canonical Agent Skill validator.
+- README links, documented word costs, and repository contents matched the
+  current files.
+- Published documentation contains only product, installation, design, and
+  validation information.
+
 ## 2026-08-03: Initial release
 
 ### Added
@@ -23,10 +41,3 @@
   placeholders remained.
 - Fresh host sessions covered non-visual UI activation, backend non-activation,
   and Mantine design-system ownership.
-- Fable accepted the saved plan, reviewed successive skill drafts, and returned
-  `ACCEPT` on the final current files with no material finding.
-
-### Note
-
-- The repository retains `PLAN.md` at the user's request. It is repository
-  evidence, not part of the installable skill context.
