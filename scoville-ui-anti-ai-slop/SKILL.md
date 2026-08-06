@@ -74,8 +74,13 @@ running the same verification twice.
    tools are not automatically design systems.
 3. **Frame the interface problem.** Identify the primary task, information
    priority, affected states, content variation, input methods, and responsive
-   transformations. Keep this analysis internal unless a material product
-   choice needs the user or the user asks for the rationale.
+   transformations. For polished true-greenfield presentation, also name one
+   deliberate domain-grounded visual direction and apply it consistently
+   through hierarchy, density, typography, shape, and interaction treatment
+   without prescribing a palette. Scope a direction established on one surface
+   to that surface; do not present it as a product-wide design system without a
+   separately owned product decision. Keep this analysis internal unless a
+   material product choice needs the user or the user asks for the rationale.
 4. **Reuse before extending.** Prefer canonical components, semantic tokens,
    variants, layout primitives, breakpoints, interaction patterns, and
    iconography. Add a primitive or token only for a demonstrated gap and only at
@@ -86,7 +91,9 @@ running the same verification twice.
 6. **Verify the rendered behavior.** Exercise only the viewports, content
    lengths, text scaling, themes, states, and input methods that could change
    the implementation decision. Automated checks supplement rendered
-   inspection; a clean build does not prove visual quality.
+   inspection; a clean build does not prove visual quality. When polished
+   presentation is part of the outcome, include representative populated
+   evidence at each target viewport separately from error or recovery evidence.
 7. **Report observed results.** Distinguish what was rendered, what was checked
    only in source, and what remains unverified.
 

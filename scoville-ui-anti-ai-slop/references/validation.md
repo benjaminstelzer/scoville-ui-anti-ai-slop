@@ -44,6 +44,14 @@ keyboard. Separate clean-start passes for each method do not prove that the
 transition works. Do not create a cross-input matrix when the methods are
 behaviorally independent.
 
+When polished presentation is an explicit outcome, rendered evidence must show
+a representative populated state rather than only an empty, loading, or error
+state. Use realistic information density, content lengths, hierarchy, and at
+least one relevant interaction state. Capture each target viewport named by the
+task as its own observation so a desktop result does not stand in for mobile or
+vice versa. Keep recovery-state evidence separate: a convincing error state
+does not prove the primary populated surface, and the reverse is equally true.
+
 ## Inspect the rendered result
 
 When practical:

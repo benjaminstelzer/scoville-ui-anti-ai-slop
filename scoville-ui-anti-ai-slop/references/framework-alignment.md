@@ -87,9 +87,14 @@ owner:
 
 1. follow the user's brief and target platform conventions;
 2. use framework defaults and scales where they provide compatible primitives;
-3. choose only the minimum internally consistent, reversible values needed for
+3. when polished presentation is part of the outcome, name a deliberate visual
+   direction grounded in the product domain and primary task, then carry it
+   consistently through information hierarchy, density, typography, shape,
+   imagery, and interaction treatment without defaulting to a prescribed
+   palette or fashionable template;
+4. choose only the minimum internally consistent, reversible values needed for
    the requested surface; and
-4. keep those choices local unless the task explicitly creates or extends the
+5. keep those choices local unless the task explicitly creates or extends the
    canonical design system.
 
 Do not pretend a single screen's choices are a mature project-wide system. Ask

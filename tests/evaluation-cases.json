@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "skill": "scoville-ui-anti-ai-slop",
+  "cases": [
+    {
+      "id": "polished-greenfield-direction",
+      "given": "A new responsive incident dashboard has no design system or visual precedent, and polished presentation is part of the outcome.",
+      "expect": [
+        "Name a deliberate direction grounded in incident triage and information priority.",
+        "Apply it consistently through hierarchy, density, typography, shape, and interaction treatment.",
+        "Do not prescribe a generic palette or claim one screen establishes a product-wide system."
+      ]
+    },
+    {
+      "id": "framework-owned-interface",
+      "given": "A Mantine application already defines theme tokens, variants, and shared components.",
+      "expect": [
+        "Preserve Mantine and project ownership instead of imposing a new greenfield direction.",
+        "Reuse semantic tokens, variants, and shared components.",
+        "Treat any local extension as a demonstrated gap at the canonical owner."
+      ]
+    },
+    {
+      "id": "representative-responsive-proof",
+      "given": "The requested product must be polished on desktop and mobile and also has a recoverable error state.",
+      "expect": [
+        "Render a representative populated state with realistic density and content lengths on desktop.",
+        "Render the same primary task separately on mobile.",
+        "Exercise a relevant interaction state and keep error or recovery evidence separate from primary-state evidence."
+      ]
+    }
+  ]
+}

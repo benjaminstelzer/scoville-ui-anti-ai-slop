@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-08-06: Greenfield direction and representative evidence
+
+### Changed
+
+- Required polished true-greenfield work to choose a deliberate visual
+  direction grounded in the product domain and apply it consistently without
+  prescribing a palette or template.
+- Required representative populated evidence with realistic density, content
+  length, hierarchy, and interaction state at each requested target viewport.
+- Separated primary populated-state evidence from error and recovery evidence.
+
+### Validation
+
+- Evaluation fixtures cover a polished greenfield task, framework-owned visual
+  work, and separate desktop, mobile, and recovery observations.
+
 ## 2026-08-06: Cross-input validation and narrower Scribe routing
 
 ### Changed
