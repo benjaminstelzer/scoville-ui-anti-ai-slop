@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-08-06: Standalone sibling-Skill composition
+
+### Changed
+
+- Made Scribe routing explicitly conditional so UI remains fully usable when
+  no sibling Skill is installed.
+- Recounted the documented Skill and reference word costs.
+
+### Validation
+
+- The canonical Skill validator passes and the documented counts match the
+  current files.
+
 ## 2026-08-06: Greenfield direction and representative evidence
 
 ### Changed

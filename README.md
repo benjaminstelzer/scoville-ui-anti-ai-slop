@@ -56,10 +56,10 @@ actual design owner before prescribing changes and distinguish rendered
 evidence from source-only claims. A backend-only request should not load the UI
 skill.
 
-**What it costs.** `SKILL.md` currently contains 882 words of rules plus 110
+**What it costs.** `SKILL.md` currently contains 992 words of rules plus 109
 words for its name and description. Framework-alignment tasks can load another
-708 words, UI-quality tasks another 699, and rendered-validation tasks another
-533. The agent loads only the references selected by the task.
+753 words, UI-quality tasks another 717, and rendered-validation tasks another
+680. The agent loads only the references selected by the task.
 
 ## What it enforces
 
@@ -86,6 +86,9 @@ The full rules live in
 [SKILL.md](scoville-ui-anti-ai-slop/SKILL.md).
 
 ## Use with the Scoville family
+
+UI works independently. When companion Skills are installed, combine them only
+for the concerns they own.
 
 Use [Scoville Code Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
 for engineering scope, canonical code ownership, implementation integrity,

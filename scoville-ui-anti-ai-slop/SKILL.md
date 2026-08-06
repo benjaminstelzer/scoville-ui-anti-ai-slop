@@ -1,6 +1,6 @@
 ---
 name: scoville-ui-anti-ai-slop
-description: Framework-aware UI quality guardrail for designing, implementing, auditing, or refining interactive web, native mobile, desktop, and terminal interfaces. Use for UI design, usability, information hierarchy, scannability, readability, clutter, visual clarity, layout, interaction states, responsive or adaptive behavior, accessibility, or broad requests to make an interface clearer or look better, even when the request is phrased non-visually. Preserve the project's design system and the owning framework's design language instead of imposing generic anti-AI aesthetics. Use with scoville-code-anti-ai-slop when changing engineering artifacts and with scoville-scribe-anti-ai-slop when visible or accessible wording must be created, changed, localized, audited, or reconciled with behavior. Do not use for backend-only work or ordinary prose, email, or document tasks without an interactive-interface concern.
+description: Framework-aware UI quality guardrail for designing, implementing, auditing, or refining interactive web, native mobile, desktop, and terminal interfaces. Use for UI design, usability, information hierarchy, scannability, readability, clutter, visual clarity, layout, interaction states, responsive or adaptive behavior, accessibility, or broad requests to make an interface clearer or look better, even when the request is phrased non-visually. Preserve the project's design system and the owning framework's design language instead of imposing generic anti-AI aesthetics. When installed, compose with scoville-code-anti-ai-slop for engineering artifacts and scoville-scribe-anti-ai-slop for variable visible or accessible wording. Do not use for backend-only work or ordinary prose, email, or document tasks without an interactive-interface concern.
 ---
 
 # Scoville UI Anti-AI-Slop
@@ -47,6 +47,9 @@ uncertain.
 
 ## Compose the Scoville family
 
+This skill works independently. When companion Skills are installed, use these
+ownership boundaries:
+
 - `scoville-code-anti-ai-slop` owns engineering scope, canonical code ownership,
   implementation integrity, risk, and proportionate proof.
 - This skill owns framework alignment, information and visual hierarchy,
@@ -59,9 +62,9 @@ uncertain.
 
 For text, this skill owns hierarchy, legibility, wrapping, truncation, scaling,
 available space, and whether a required accessible name or label exists and is
-programmatically associated. Scribe owns what that name, label, error, or help
-text says. Apply the relevant skills together without copying their rules or
-running the same verification twice.
+programmatically associated. When installed, Scribe owns what that name, label,
+error, or help text says. Apply the relevant available skills together without
+copying their rules or running the same verification twice.
 
 ## Work from task to rendered result
 

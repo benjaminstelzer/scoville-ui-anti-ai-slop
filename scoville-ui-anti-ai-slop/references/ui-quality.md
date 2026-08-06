@@ -48,7 +48,9 @@ Use the project or platform's typography and spacing language while protecting:
   target across supported states and themes.
 
 Do not shorten, rewrite, or invent interface copy to solve a layout problem.
-Route wording through Scribe and fix the presentation constraint here.
+When Scribe is available, route variable wording through it; otherwise preserve
+existing copy or treat the wording as a separate verified text decision. Fix
+the presentation constraint here.
 
 ## Make interaction predictable
 
