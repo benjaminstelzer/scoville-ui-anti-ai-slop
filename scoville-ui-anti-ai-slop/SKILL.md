@@ -1,6 +1,6 @@
 ---
 name: scoville-ui-anti-ai-slop
-description: Framework-aware UI quality guardrail for designing, implementing, auditing, or refining interactive web, native mobile, desktop, and terminal interfaces. Use for UI design, usability, information hierarchy, scannability, readability, clutter, visual clarity, layout, interaction states, responsive or adaptive behavior, accessibility, or broad requests to make an interface clearer or look better, even when the request is phrased non-visually. Preserve the project's design system and the owning framework's design language instead of imposing generic anti-AI aesthetics. Use with scoville-code-anti-ai-slop when changing engineering artifacts and with scoville-scribe-anti-ai-slop when visible or accessible wording is involved. Do not use for backend-only work or ordinary prose, email, or document tasks without an interactive-interface concern.
+description: Framework-aware UI quality guardrail for designing, implementing, auditing, or refining interactive web, native mobile, desktop, and terminal interfaces. Use for UI design, usability, information hierarchy, scannability, readability, clutter, visual clarity, layout, interaction states, responsive or adaptive behavior, accessibility, or broad requests to make an interface clearer or look better, even when the request is phrased non-visually. Preserve the project's design system and the owning framework's design language instead of imposing generic anti-AI aesthetics. Use with scoville-code-anti-ai-slop when changing engineering artifacts and with scoville-scribe-anti-ai-slop when visible or accessible wording must be created, changed, localized, audited, or reconciled with behavior. Do not use for backend-only work or ordinary prose, email, or document tasks without an interactive-interface concern.
 ---
 
 # Scoville UI Anti-AI-Slop
@@ -53,7 +53,9 @@ uncertain.
   layout behavior, interaction presentation, responsive adaptation, and
   rendered UI evidence.
 - `scoville-scribe-anti-ai-slop` owns visible and accessible wording,
-  terminology, localization contracts, factual meaning, and source fidelity.
+  terminology, localization contracts, factual meaning, and source fidelity
+  when the task makes those concerns variable. Source-exact, unchanged strings
+  do not activate Scribe merely because the interface renders them.
 
 For text, this skill owns hierarchy, legibility, wrapping, truncation, scaling,
 available space, and whether a required accessible name or label exists and is

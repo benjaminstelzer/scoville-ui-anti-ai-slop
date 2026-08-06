@@ -37,6 +37,13 @@ Do not impose a universal breakpoint list or test every possible combination.
 Include a condition when it could change the decision or expose a failure in the
 requested flow.
 
+When a flow supports multiple input methods and one method can leave focus,
+selection, pointer capture, composition, or shared state that affects another,
+exercise at least one relevant handoff in the same task, such as pointer to
+keyboard. Separate clean-start passes for each method do not prove that the
+transition works. Do not create a cross-input matrix when the methods are
+behaviorally independent.
+
 ## Inspect the rendered result
 
 When practical:

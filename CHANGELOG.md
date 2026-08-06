@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-08-06: Cross-input validation and narrower Scribe routing
+
+### Changed
+
+- Required one relevant handoff between input methods when focus, selection,
+  capture, composition, or shared state can make the transition behaviorally
+  distinct.
+- Clarified that separate clean-start passes for pointer, keyboard, touch, or
+  other methods do not prove a stateful transition between them.
+- Limited Scribe composition to interface work where wording or meaning must be
+  created, changed, localized, audited, or reconciled with behavior.
+
+### Validation
+
+- The installable directory passed the canonical Agent Skill validator.
+- A focused interaction review confirmed that pointer focus affecting a later
+  keyboard activation now selects a same-task cross-input check.
+
 ## 2026-08-03: Family documentation alignment
 
 ### Changed
