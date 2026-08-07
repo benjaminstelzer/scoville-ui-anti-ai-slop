@@ -26,6 +26,9 @@
   evidence, source-only audit, quality-only work, and fixed strings.
 - The full UI/Code/Scribe composition and the source-only Scribe opt-out case
   passed with only their required references.
+- The same six standalone cases passed with `gpt-5.6-terra` at medium
+  reasoning. Both composition cases also preserved their required ownership,
+  fixed-string, opt-out, and evidence boundaries.
 - Direct-reference, diff, encoding, and host-neutrality checks pass.
 
 ## 2026-08-06: Standalone sibling-Skill composition
