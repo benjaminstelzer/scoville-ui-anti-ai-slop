@@ -56,10 +56,10 @@ actual design owner before prescribing changes and distinguish rendered
 evidence from source-only claims. A backend-only request should not load the UI
 skill.
 
-**What it costs.** `SKILL.md` currently contains 992 words of rules plus 109
-words for its name and description. Framework-alignment tasks can load another
-753 words, UI-quality tasks another 717, and rendered-validation tasks another
-680. The agent loads only the references selected by the task.
+**What it costs.** Skill discovery exposes only the name and description. After
+activation, the core loads first and selects framework alignment, UI quality,
+and rendered validation only when the task needs them. Provider token usage also
+depends on the host and conversation.
 
 ## What it enforces
 

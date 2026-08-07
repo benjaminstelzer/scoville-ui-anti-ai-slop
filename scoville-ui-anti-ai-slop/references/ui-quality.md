@@ -3,6 +3,16 @@
 Apply only the lenses that can change the requested outcome. These are outcome
 tests, not a visual recipe.
 
+## Contents
+
+- Start with the user task
+- Make relationships perceptible
+- Preserve readable content
+- Make interaction predictable
+- Adapt instead of merely shrinking
+- Design states as part of the same interface
+- Keep accessibility structural
+
 ## Start with the user task
 
 Make the primary task and its next meaningful action understandable from the

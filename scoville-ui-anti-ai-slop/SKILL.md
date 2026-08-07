@@ -1,136 +1,98 @@
 ---
 name: scoville-ui-anti-ai-slop
-description: Framework-aware UI quality guardrail for designing, implementing, auditing, or refining interactive web, native mobile, desktop, and terminal interfaces. Use for UI design, usability, information hierarchy, scannability, readability, clutter, visual clarity, layout, interaction states, responsive or adaptive behavior, accessibility, or broad requests to make an interface clearer or look better, even when the request is phrased non-visually. Preserve the project's design system and the owning framework's design language instead of imposing generic anti-AI aesthetics. When installed, compose with scoville-code-anti-ai-slop for engineering artifacts and scoville-scribe-anti-ai-slop for variable visible or accessible wording. Do not use for backend-only work or ordinary prose, email, or document tasks without an interactive-interface concern.
+description: Framework-aware guardrail for UI design, implementation, and audit. Use for hierarchy, layout, states, responsiveness, accessibility, usability, or clarity. Preserve the product design system and platform language. Excludes backend-only work and prose. Compose with Code for engineering and Scribe for variable UI wording.
 ---
 
 # Scoville UI Anti-AI-Slop
 
-Improve the interface the product already has. Treat consistency, usability,
-information design, readability, responsive adaptation, accessibility, and
-visual clarity as outcomes; do not install a second design language disguised
-as best practice.
+Improve the interface the product has. Treat usability, information design,
+adaptation, accessibility, and clarity as outcomes; do not install a second
+design language disguised as best practice.
 
-## Resolve ownership before designing
+If the user explicitly excludes this Skill, stop before reading a reference,
+using a Skill-directed tool, changing anything, or making a Skill-derived
+completion claim. A project or host instruction with higher authority may still
+require it; report that exact conflict. Excluding a sibling excludes only that
+sibling and does not authorize reproducing its contract here.
+
+## Resolve ownership first
 
 Resolve each concern in this order:
 
-1. Follow system, safety, and legally binding accessibility requirements.
-2. Follow the explicit user request, including an informed decision to accept a
-   reported limitation against a non-binding accessibility target.
-3. Follow repository instructions.
-4. Follow canonical product requirements, design-system components, wrappers,
-   themes, semantic tokens, and approved assets.
-5. For unresolved concerns, follow the owning installed framework or platform.
-6. Reuse deliberate local patterns that agree with those owners.
-7. Apply the general UI principles in this skill only to the remaining gap.
+1. system, safety, and legally binding accessibility requirements;
+2. the explicit user request, including an informed acceptance of a reported
+   limitation against a non-binding target;
+3. repository instructions;
+4. canonical product requirements, design-system components, wrappers, themes,
+   semantic tokens, and approved assets;
+5. the owning framework or platform for unresolved concerns;
+6. deliberate local patterns that agree with those owners; and
+7. this Skill's general UI principles for the remaining gap.
 
-Do not use a lower source to override a higher owner. Surface a material
-divergence instead of silently choosing whichever rule is easiest to implement.
-Treat a repeated same-surface convention as project evidence only when it is
-clearly deliberate, not merely copied technical debt.
+Do not let a lower source override a higher owner. Surface a material conflict.
+A repeated local convention counts only when it is deliberate, current, and
+appropriate to the same surface.
 
-When the project names no accessibility target, use WCAG 2.2 Level AA for web
-UI and the owning platform's current accessibility guidance for native,
-desktop, and terminal UI. Resolve defects through supported components, tokens,
-variants, and customization APIs. If the canonical owner cannot meet the
-applicable floor, report the owner conflict; do not fork the design language to
-hide it. In an unattended run, make only the closest supported compliant change
-within scope and report the residual limitation.
+When no accessibility target is named, use WCAG 2.2 Level AA for web UI and the
+owning platform's current guidance elsewhere. Use supported components and APIs.
+If the canonical owner cannot meet the floor, report the exact limitation rather
+than concealing it with a parallel design language.
 
-Treat a target as non-binding only when that status is known. If binding status
-is unknown, state that any acceptance assumes no binding requirement applies.
+Read [framework-alignment.md](references/framework-alignment.md) before deciding
+an owner when the stack is unfamiliar, ownership is ambiguous, several UI
+layers interact, no canonical visual owner appears to exist, or the supported
+customization path is uncertain.
 
-Read [framework-alignment.md](references/framework-alignment.md) when ownership
-is ambiguous, no canonical visual owner appears to exist, multiple UI layers
-interact, the framework is unfamiliar, or its supported customization path is
-uncertain.
+## Keep family ownership distinct
 
-## Compose the Scoville family
+This Skill works alone. Code owns engineering scope, code ownership, integrity,
+risk, and proof. UI owns framework alignment, hierarchy, layout, interaction
+presentation, responsive adaptation, and rendered evidence. Scribe owns meaning,
+terminology, localization, and fidelity only when visible or accessible wording
+is variable; fixed source-exact strings do not activate it.
 
-This skill works independently. When companion Skills are installed, use these
-ownership boundaries:
+UI owns text layout, legibility, space, scaling, and whether a required label or
+accessible name exists and is associated. Scribe, when applicable, owns what it
+says. Do not copy sibling rules or repeat their verification.
 
-- `scoville-code-anti-ai-slop` owns engineering scope, canonical code ownership,
-  implementation integrity, risk, and proportionate proof.
-- This skill owns framework alignment, information and visual hierarchy,
-  layout behavior, interaction presentation, responsive adaptation, and
-  rendered UI evidence.
-- `scoville-scribe-anti-ai-slop` owns visible and accessible wording,
-  terminology, localization contracts, factual meaning, and source fidelity
-  when the task makes those concerns variable. Source-exact, unchanged strings
-  do not activate Scribe merely because the interface renders them.
+## Route the work
 
-For text, this skill owns hierarchy, legibility, wrapping, truncation, scaling,
-available space, and whether a required accessible name or label exists and is
-programmatically associated. When installed, Scribe owns what that name, label,
-error, or help text says. Apply the relevant available skills together without
-copying their rules or running the same verification twice.
+1. Inspect the requested surface, repository instructions, framework version,
+   canonical owners, and nearest comparable surface only as needed.
+2. Identify the primary task, priority, affected states, content variation,
+   inputs, and responsive transformations.
+3. Reuse canonical components, tokens, variants, layouts, breakpoints, and
+   interactions. Add a primitive only for a demonstrated gap at its owner.
+4. Make the smallest coherent change for the outcome and necessary states.
+5. Verify only rendered conditions that could disprove the result. Separate
+   rendered evidence, source inspection, and unverified behavior in the report.
+   For an unimplemented direction or source-only audit, say explicitly that the
+   direction or findings are unrendered and rendered behavior remains unverified;
+   do not load validation merely to report that boundary.
 
-## Work from task to rendered result
+Read [ui-quality.md](references/ui-quality.md) before making a quality decision
+about task flow, hierarchy, layout, readability, states, accessibility structure,
+or responsive behavior. For an evidence-only question, load validation alone
+unless the interface itself must also be judged.
 
-1. **Inspect only what can change the decision.** Establish the user's task,
-   repository instructions, installed framework and version, canonical theme or
-   token sources, shared components, and the nearest comparable surfaces.
-2. **Classify the UI stack.** Distinguish styled systems, headless libraries,
-   utility or application frameworks, platform UI stacks, and true greenfield
-   work. React, Vue, Svelte, Tailwind, CSS Modules, and similar implementation
-   tools are not automatically design systems.
-3. **Frame the interface problem.** Identify the primary task, information
-   priority, affected states, content variation, input methods, and responsive
-   transformations. For polished true-greenfield presentation, also name one
-   deliberate domain-grounded visual direction and apply it consistently
-   through hierarchy, density, typography, shape, and interaction treatment
-   without prescribing a palette. Scope a direction established on one surface
-   to that surface; do not present it as a product-wide design system without a
-   separately owned product decision. Keep this analysis internal unless a
-   material product choice needs the user or the user asks for the rationale.
-4. **Reuse before extending.** Prefer canonical components, semantic tokens,
-   variants, layout primitives, breakpoints, interaction patterns, and
-   iconography. Add a primitive or token only for a demonstrated gap and only at
-   its canonical owner.
-5. **Make the smallest coherent change.** Fix the requested outcome and its
-   necessary states without broad redesign, global theme exceptions, or nearby
-   cleanup.
-6. **Verify the rendered behavior.** Exercise only the viewports, content
-   lengths, text scaling, themes, states, and input methods that could change
-   the implementation decision. Automated checks supplement rendered
-   inspection; a clean build does not prove visual quality. When polished
-   presentation is part of the outcome, include representative populated
-   evidence at each target viewport separately from error or recovery evidence.
-7. **Report observed results.** Distinguish what was rendered, what was checked
-   only in source, and what remains unverified.
-
-Read [ui-quality.md](references/ui-quality.md) when designing, restructuring, or
-auditing task flow, hierarchy, layout, readability, states, or responsive
-behavior. Read [validation.md](references/validation.md) after changing an
-interface or before making claims about rendered UI behavior.
+Read [validation.md](references/validation.md) after an interface change or
+before claiming rendered behavior, responsive behavior, observed interaction,
+visual quality, or accessibility. Do not load it for a source-only audit that
+confines findings to inspected structure and explicitly leaves rendered and
+interactive behavior unverified. A build or source review cannot prove rendered
+behavior.
 
 ## Protect the UI integrity floor
 
-Never improve appearance by:
-
-- inventing a visual language when the product or framework already owns it;
-- bypassing an available semantic token or supported variant with an arbitrary
-  raw value;
-- rebuilding an available framework component as a less accessible custom one;
-- removing or obscuring focus, keyboard, touch, zoom, text-scaling,
-  localization, reduced-motion, or comparable platform accommodations;
-- hiding, clipping, or silently discarding content to simulate responsiveness;
-- making color, placement, hover, or icon shape the only carrier of meaning;
-- omitting feedback, recovery, or interaction behavior for a state introduced
-  or changed by the work; or
-- applying a local exception through a global theme override.
-
-This floor binds the agent's own polish decisions. Resolve an explicit,
-informed user decision through the ownership order above, still report the
-limitation, and never override system, safety, or legally binding requirements.
+Never improve appearance by inventing a parallel visual language, bypassing a
+semantic token, rebuilding an accessible component, removing focus or input
+accommodations, hiding required content, using one visual cue as the sole
+carrier of meaning, omitting recovery for a changed state, or applying a local
+exception through a global theme override.
 
 Do not impose preferred fonts, palettes, radii, shadows, card patterns,
-breakpoint matrices, pixel values, or fashionable bans. Quantitative rules come
-from the applicable accessibility standard, owning platform, or detected design
-system—not from this skill.
+breakpoints, pixel values, or fashionable bans. Quantitative rules come from
+the accessibility standard, platform, or design system—not this Skill.
 
-When asked only to audit or advise, return prioritized, evidenced findings and
-do not edit. When no renderer or simulator is available, say that rendered
-behavior is unverified rather than inferring success from source code or a
-single static screenshot.
+When asked only to audit or advise, return prioritized findings tied to observed
+evidence and do not edit.

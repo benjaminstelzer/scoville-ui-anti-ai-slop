@@ -4,6 +4,15 @@ Choose the cheapest rendered evidence that could disprove the implementation.
 Validation depth follows the changed behavior and risk, not a fixed screenshot
 ritual.
 
+## Contents
+
+- Establish the claim
+- Derive the test surface
+- Inspect the rendered result
+- Use automation as supporting evidence
+- Handle reviews and missing renderers
+- Report the result
+
 ## Establish the claim
 
 State what the change is supposed to improve and which observable result would
@@ -100,6 +109,10 @@ Report:
 - relevant automated checks and their result;
 - framework or design-system alignment observed; and
 - residual unverified conditions or owner conflicts.
+
+When supplied evidence explicitly names unobserved conditions that bound the
+requested claim, retain those conditions individually or in an equally precise
+grouping. A broad caveat does not preserve a narrower evidence gap.
 
 Avoid generic claims such as "responsive," "accessible," or "looks good" when
 the evidence covers only a narrower condition.

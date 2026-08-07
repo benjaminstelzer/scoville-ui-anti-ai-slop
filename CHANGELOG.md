@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-08-07: Progressive disclosure
+
+### Changed
+
+- Reduced the always-loaded core by moving framework diagnosis, detailed UI
+  quality rules, and rendered-validation procedures to their existing focused
+  references.
+- Kept framework ownership, family boundaries, the non-negotiable interface
+  integrity floor, audit-only behavior, and reference routing in the core.
+- Shortened the frontmatter description while preserving positive, negative,
+  sibling-composition, and opt-out boundaries.
+- Limited rendered validation to changed or claimed rendered behavior; a
+  source-only audit can remain reference-free when it states the unrendered
+  boundary explicitly.
+- Required named missing evidence such as mobile, zoom, keyboard, touch, screen
+  reader, reduced motion, and automated accessibility coverage to remain
+  individually visible in the conclusion.
+
+### Validation
+
+- The canonical Agent Skill validator passes.
+- Six focused standalone routing cases passed with `gpt-5.6-sol` at medium
+  reasoning, including framework ownership, greenfield direction, rendered
+  evidence, source-only audit, quality-only work, and fixed strings.
+- The full UI/Code/Scribe composition and the source-only Scribe opt-out case
+  passed with only their required references.
+- Direct-reference, diff, encoding, and host-neutrality checks pass.
+
 ## 2026-08-06: Standalone sibling-Skill composition
 
 ### Changed

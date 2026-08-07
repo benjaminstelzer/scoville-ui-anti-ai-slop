@@ -4,6 +4,14 @@ Use this reference to determine who owns a UI decision. Framework fidelity is
 not passive obedience to every default; it is changing the interface through
 the canonical layer that the product has chosen.
 
+## Contents
+
+- Find the owners
+- Classify the stack
+- Distinguish convention from accident
+- Handle true greenfield work
+- Resolve accessibility conflicts
+
 ## Find the owners
 
 Inspect only sources relevant to the requested surface:
