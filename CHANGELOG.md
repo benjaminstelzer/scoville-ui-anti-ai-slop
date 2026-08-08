@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-08-08: Explicitly optional family composition
+
+### Changed
+
+- Made all sibling Skills explicitly optional: UI remains complete for its own
+  concerns and neither requires, installs, nor simulates Plan, Code, or Scribe.
+
+### Validation
+
+- The canonical Agent Skill validator and repository diff checks pass.
+- Fable's complete standalone and family review found no remaining UI issue,
+  hard sibling dependency, ownership gap, or cycle.
+- The tested repository copy and the locally installed Skill are byte-identical.
+
 ## 2026-08-07: Progressive disclosure
 
 ### Changed

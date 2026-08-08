@@ -55,6 +55,11 @@ UI owns text layout, legibility, space, scaling, and whether a required label or
 accessible name exists and is associated. Scribe, when applicable, owns what it
 says. Do not copy sibling rules or repeat their verification.
 
+Every sibling Skill is optional. Do not require, install, or simulate Plan,
+Code, or Scribe when it is absent or inapplicable. UI remains complete for its
+owned interface concerns and composes only with siblings that are independently
+activated for their own concerns.
+
 ## Route the work
 
 1. Inspect the requested surface, repository instructions, framework version,
