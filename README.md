@@ -97,6 +97,11 @@ risk, and proportionate proof. Use
 for visible and accessible wording, terminology, localization contracts,
 factual meaning, and source fidelity.
 
+Use [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) when the
+interface work needs durable sequencing across independently resumable
+outcomes or handoffs. Plan owns project direction and Work Item lifecycle; UI
+owns the interface result and rendered evidence.
+
 Mixed tasks use the relevant skills together. For an error state, Code proves
 the state transition, UI verifies placement, focus, and responsive behavior,
 and Scribe verifies the message. UI owns whether a required label or accessible
