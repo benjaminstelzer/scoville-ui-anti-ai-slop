@@ -51,19 +51,19 @@ For Claude Code, `<skills-dir>` is `~/.claude/skills/` for all projects or
 `.claude/skills/` inside a repository for that project only. For other agents,
 consult their documentation; paths differ per agent.
 
-**Verify it works.** Ask the agent: *"Make this dense table easier to scan
-without changing the product's design system."* The agent should inspect the
-actual design owner before prescribing changes and distinguish rendered
-evidence from source-only claims. A backend-only request should not load the UI
-skill.
-
 **What it costs.** Compatible hosts expose compact discovery metadata before
 loading the full Skill instructions. After
 activation, the 1,050-token core selects framework alignment, UI quality, and
 rendered validation only when the task needs them. The complete installable
 package is 4,155 tokens, but references not selected by the route are not loaded.
-Compared with `v1.0.6`, the always-loaded core fell from 1,077 to 1,050 tokens
-(-2.51%). Provider usage also depends on the host and conversation. See
+Compared with pre-optimization `v1.0.6`, the always-loaded core fell from 1,077
+to 1,050 tokens (-2.51%). Activating any Skill adds instructions to the prompt
+and can use materially more tokens than working without one. That overhead buys
+stronger design-system alignment, accessibility, responsive and state
+coverage, and more disciplined rendered evidence. Use Scoville UI when those
+safeguards matter; leave it inactive for a small, fast vibe-coding experiment
+when minimizing token use matters more. Provider usage also depends on the host
+and conversation. See
 [the benchmark evidence](docs/benchmark-evidence.md) for scope and limits.
 
 ## What it enforces
@@ -175,8 +175,8 @@ framework database, assets, or runtime network fetches.
 prioritize reliability before compression. Across the Scoville family, **797
 runs and supporting artifacts** were recorded, including **742 valid benchmark
 runs**. This Skill passed **30/30** final cases. Its always-loaded instructions
-use **2.51% fewer tokens than v1.0.6**. Minimum executor: Terra 5.6 Medium or
-comparable, such as Opus 4.8. See
+use **2.51% fewer tokens than pre-optimization v1.0.6**. Minimum executor: Terra
+5.6 Medium or comparable, such as Opus 4.8. See
 [benchmark evidence](docs/benchmark-evidence.md).
 
 ## License
