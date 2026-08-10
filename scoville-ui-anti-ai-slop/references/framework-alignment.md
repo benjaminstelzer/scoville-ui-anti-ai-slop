@@ -88,10 +88,23 @@ treat it as project-level evidence. If ownership remains material and unclear,
 ask or report the conflict instead of normalizing the interface in either
 direction.
 
+Apply this invariant before normalizing a local exception:
+
+- Evidence establishes deliberate, current intent: preserve the exception as
+  project-level evidence when it is appropriate to the surface.
+- Evidence establishes an accidental or stale exception: normalize through the
+  canonical owner.
+- Intent is unknown or conflicting: ownership remains unresolved. Inspect or
+  ask for intent; never infer that the exception is accidental.
+
 ## Handle true greenfield work
 
 When there is no design system, theme, token set, approved precedent, or visual
 owner:
+
+When polished presentation is requested, the requested surface owns a
+deliberate local direction. Framework defaults may supply compatible primitives
+and scales, but they never become the visual owner.
 
 1. follow the user's brief and target platform conventions;
 2. use framework defaults and scales where they provide compatible primitives;

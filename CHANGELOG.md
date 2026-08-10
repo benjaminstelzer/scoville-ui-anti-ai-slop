@@ -1,5 +1,35 @@
 # Changelog
 
+## 2026-08-10: Reliability-qualified compression
+
+### Changed
+
+- Recast the core as a compact owner, gate, workflow, and reference-routing
+  contract while preserving the complete UI integrity floor.
+- Made local-exception handling explicit: preserve deliberate current intent,
+  normalize proven accidents through the canonical owner, and leave unknown
+  intent unresolved.
+- Clarified that a requested polished greenfield surface owns its deliberate
+  local direction while framework defaults remain primitives rather than the
+  visual owner.
+
+### Validation
+
+- The frozen paired benchmark passed Train 18/18, Val 9/9, and sealed Test 3/3
+  for both the reliability control and compressed package across routing,
+  semantic result, process, and efficiency gates.
+- All 60 arm-case executions completed with provider usage, no routing retry,
+  no shell call, and exact-once routed reads.
+- Core size fell from 1,173 to 1,050 tokens (-10.49%) against the equally
+  reliable control. Loaded Skill context across the 30 compressed executions
+  fell from 71,691 to 68,370 tokens (-4.63%).
+- Against the preceding GitHub package, the final core is 27 tokens smaller;
+  the complete package is 88 tokens larger because the reliability repair in
+  the framework reference is retained.
+- The canonical Agent Skill validator passes. The benchmark used
+  `gpt-5.6-terra` at medium reasoning and does not establish behavior on weaker
+  executors or arbitrary tasks.
+
 ## 2026-08-08: Explicitly optional family composition
 
 ### Changed

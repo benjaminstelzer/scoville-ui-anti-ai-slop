@@ -3,101 +3,103 @@ name: scoville-ui-anti-ai-slop
 description: Framework-aware guardrail for UI design, implementation, and audit. Use for hierarchy, layout, states, responsiveness, accessibility, usability, or clarity. Preserve the product design system and platform language. Excludes backend-only work and prose. Compose with Code for engineering and Scribe for variable UI wording.
 ---
 
-# Scoville UI Anti-AI-Slop
+Improve existing UI usability, information design, adaptation, accessibility,
+and clarity; never replace its design language.
 
-Improve the interface the product has. Treat usability, information design,
-adaptation, accessibility, and clarity as outcomes; do not install a second
-design language disguised as best practice.
+## Gates and owners
 
-If the user explicitly excludes this Skill, stop before reading a reference,
-using a Skill-directed tool, changing anything, or making a Skill-derived
-completion claim. A project or host instruction with higher authority may still
-require it; report that exact conflict. Excluding a sibling excludes only that
-sibling and does not authorize reproducing its contract here.
+**OPT-OUT:** If the user explicitly excludes this Skill, STOP before references,
+Skill tools, changes, or Skill-derived completion claims. If higher-authority
+host/project rules require it, report exact conflict. A sibling opt-out affects
+that sibling only; never reproduce its contract.
 
-## Resolve ownership first
+Apply the highest owner per concern:
 
-Resolve each concern in this order:
-
-1. system, safety, and legally binding accessibility requirements;
-2. the explicit user request, including an informed acceptance of a reported
+1. system, safety, legally binding accessibility;
+2. explicit user request, including informed acceptance of a reported
    limitation against a non-binding target;
 3. repository instructions;
 4. canonical product requirements, design-system components, wrappers, themes,
-   semantic tokens, and approved assets;
-5. the owning framework or platform for unresolved concerns;
-6. deliberate local patterns that agree with those owners; and
-7. this Skill's general UI principles for the remaining gap.
+   semantic tokens, approved assets;
+5. owning framework/platform for unresolved concerns;
+6. deliberate owner-aligned local patterns;
+7. this Skill's principles for the remaining gap.
 
-Do not let a lower source override a higher owner. Surface a material conflict.
-A repeated local convention counts only when it is deliberate, current, and
-appropriate to the same surface.
+Lower sources never override higher owners; report material conflicts.
 
-When no accessibility target is named, use WCAG 2.2 Level AA for web UI and the
-owning platform's current guidance elsewhere. Use supported components and APIs.
-If the canonical owner cannot meet the floor, report the exact limitation rather
-than concealing it with a parallel design language.
+- **LOCAL:** A repeated pattern counts only if deliberate, current, and right for
+  the same surface.
+- **UNKNOWN EXCEPTION:** Ownership is unresolved. Inspect or ask; normalize only
+  with evidence it is accidental or stale.
+- **GREENFIELD:** No visual owner plus requested polish makes the surface owner
+  of a deliberate local direction; framework defaults remain primitives.
+- **ACCESSIBILITY:** No target: web uses WCAG 2.2 AA; elsewhere use current
+  platform guidance; always use supported components and APIs.
+- **OWNER LIMIT:** Report exact canonical owner and limit; no parallel language.
+  Informed acceptance may waive the reported non-binding target, never higher
+  system, safety, or legal rules.
 
-Read [framework-alignment.md](references/framework-alignment.md) before deciding
-an owner when the stack is unfamiliar, ownership is ambiguous, several UI
-layers interact, no canonical visual owner appears to exist, or the supported
-customization path is uncertain.
+## Skill family
 
-## Keep family ownership distinct
+Works alone. Compose only independently active siblings; never require, install,
+or simulate optional Plan, Code, or Scribe.
 
-This Skill works alone. Code owns engineering scope, code ownership, integrity,
-risk, and proof. UI owns framework alignment, hierarchy, layout, interaction
-presentation, responsive adaptation, and rendered evidence. Scribe owns meaning,
-terminology, localization, and fidelity only when visible or accessible wording
-is variable; fixed source-exact strings do not activate it.
+- **Code:** engineering scope, code ownership, integrity, risk, proof.
+- **UI:** framework alignment, hierarchy, layout, interaction presentation,
+  responsive adaptation, rendered evidence; text layout, legibility, space,
+  scaling; required label or accessible name existence and association.
+- **Scribe:** meaning, terminology, localization, fidelity of variable
+  visible/accessibility wording. Fixed source-exact strings do not activate it.
 
-UI owns text layout, legibility, space, scaling, and whether a required label or
-accessible name exists and is associated. Scribe, when applicable, owns what it
-says. Do not copy sibling rules or repeat their verification.
+When active, Scribe owns what text says; UI owns its presentation. Do not copy
+or reverify siblings. UI remains complete alone.
 
-Every sibling Skill is optional. Do not require, install, or simulate Plan,
-Code, or Scribe when it is absent or inapplicable. UI remains complete for its
-owned interface concerns and composes only with siblings that are independently
-activated for their own concerns.
+## Workflow
 
-## Route the work
-
-1. Inspect the requested surface, repository instructions, framework version,
-   canonical owners, and nearest comparable surface only as needed.
-2. Identify the primary task, priority, affected states, content variation,
-   inputs, and responsive transformations.
+1. Inspect as needed: surface, repository rules, framework version, canonical
+   owners, nearest comparable surface.
+2. Identify primary task, priority, affected states, content variation, inputs,
+   responsive transformations.
 3. Reuse canonical components, tokens, variants, layouts, breakpoints, and
-   interactions. Add a primitive only for a demonstrated gap at its owner.
-4. Make the smallest coherent change for the outcome and necessary states.
-5. Verify only rendered conditions that could disprove the result. Separate
-   rendered evidence, source inspection, and unverified behavior in the report.
-   For an unimplemented direction or source-only audit, say explicitly that the
-   direction or findings are unrendered and rendered behavior remains unverified;
-   do not load validation merely to report that boundary.
+   interactions. Add a primitive only for a demonstrated owner gap.
+4. Make the smallest coherent change for the outcome and required states.
+5. Verify only rendered conditions able to disprove. Report rendered, source,
+   and unverified evidence separately. Mark unimplemented or source-only work
+   unrendered and rendered behavior unverified; never load Validation merely to
+   state this boundary.
 
-Read [ui-quality.md](references/ui-quality.md) before making a quality decision
-about task flow, hierarchy, layout, readability, states, accessibility structure,
-or responsive behavior. For an evidence-only question, load validation alone
-unless the interface itself must also be judged.
+## Reference router
 
-Read [validation.md](references/validation.md) after an interface change or
-before claiming rendered behavior, responsive behavior, observed interaction,
-visual quality, or accessibility. Do not load it for a source-only audit that
-confines findings to inspected structure and explicitly leaves rendered and
-interactive behavior unverified. A build or source review cannot prove rendered
-behavior.
+- **Framework:** Load
+  [framework-alignment.md](references/framework-alignment.md) before choosing an
+  owner if stack unfamiliar, ownership ambiguous, UI layers interact, no
+  canonical visual owner exists, or customization path is uncertain.
+- **Quality:** Load [ui-quality.md](references/ui-quality.md) before judging task
+  flow, hierarchy, layout, readability, states, accessibility structure, or
+  responsive behavior.
+- **Validation:** Load [validation.md](references/validation.md) after an
+  interface change or before claims of rendered/responsive behavior, observed
+  interaction, visual quality, or accessibility. Build/source cannot prove
+  rendering.
 
-## Protect the UI integrity floor
+**EVIDENCE-ONLY:** UI decision fixed; judge proof only. Load Validation alone
+unless judging UI. Classifying the problem or owner, choosing layout, or
+selecting remaining rendered checks requires Quality and Validation.
 
-Never improve appearance by inventing a parallel visual language, bypassing a
-semantic token, rebuilding an accessible component, removing focus or input
-accommodations, hiding required content, using one visual cue as the sole
-carrier of meaning, omitting recovery for a changed state, or applying a local
-exception through a global theme override.
+**SOURCE-ONLY AUDIT:** If structure-only, omit Validation; explicitly mark
+rendered/interactive behavior unverified. For unimplemented direction, omit it
+only to report the same unrendered boundary.
 
-Do not impose preferred fonts, palettes, radii, shadows, card patterns,
-breakpoints, pixel values, or fashionable bans. Quantitative rules come from
-the accessibility standard, platform, or design system—not this Skill.
+## Integrity floor
 
-When asked only to audit or advise, return prioritized findings tied to observed
-evidence and do not edit.
+Never improve appearance through: parallel visual language; semantic-token
+bypass; accessible-component rebuild; removed focus/input accommodation; hidden
+required content; meaning carried solely by one visual cue; missing changed-state
+recovery; local exception applied through a global theme override.
+
+Never impose preferred fonts, palettes, radii, shadows, card patterns,
+breakpoints, pixel values, or fashionable bans. Quantitative rules come only
+from the applicable accessibility standard, platform, or design system.
+
+Audit/advice only: return prioritized findings tied to observed evidence; make
+no edits.
