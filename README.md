@@ -107,6 +107,10 @@ interface work needs durable sequencing across independently resumable
 outcomes or handoffs. Plan owns project direction and Work Item lifecycle; UI
 owns the interface result and rendered evidence.
 
+Use [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff) to
+transfer the current interface state, ownership, evidence, and next safe action
+to another agent or session without replacing Plan's durable records.
+
 Mixed tasks use the relevant skills together. For an error state, Code proves
 the state transition, UI verifies placement, focus, and responsive behavior,
 and Scribe verifies the message. UI owns whether a required label or accessible
@@ -172,9 +176,9 @@ framework database, assets, or runtime network fetches.
 ## Status
 
 [Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) was extended to
-prioritize reliability before compression. Across the Scoville family, **797
-runs and supporting artifacts** were recorded, including **742 valid benchmark
-runs**. This Skill passed **30/30** final cases. Its always-loaded instructions
+prioritize reliability before compression. Across the five Scoville Skills,
+development recorded **1,019 optimization and evaluation runs**. This Skill
+passed **30/30** final cases. Its always-loaded instructions
 use **2.51% fewer tokens than pre-optimization v1.0.6**. Minimum executor: Terra
 5.6 Medium or comparable, such as Opus 4.8. See
 [benchmark evidence](docs/benchmark-evidence.md).
