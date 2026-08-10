@@ -62,9 +62,8 @@ loading the full Skill instructions. After
 activation, the 1,050-token core selects framework alignment, UI quality, and
 rendered validation only when the task needs them. The complete installable
 package is 4,155 tokens, but references not selected by the route are not loaded.
-In the frozen compression benchmark, the final core reduced loaded Skill context
-by 4.63% against the equally reliable 1,173-token control. Provider usage also
-depends on the host and conversation. See
+Compared with `v1.0.6`, the always-loaded core fell from 1,077 to 1,050 tokens
+(-2.51%). Provider usage also depends on the host and conversation. See
 [the benchmark evidence](docs/benchmark-evidence.md) for scope and limits.
 
 ## What it enforces
@@ -172,16 +171,12 @@ framework database, assets, or runtime network fetches.
 
 ## Status
 
-The installable directory passes the canonical Agent Skill validator. It was
-optimized with a project-local, reliability-first, token-saving extension of
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt): `gpt-5.6-sol` at
-`xhigh` handled optimization and routing, and `gpt-5.6-terra` at `medium`
-executed the frozen A/B benchmark. Across the four-Skill program, **797 run
-artifacts** were recorded, including **742 technically valid benchmark runs**,
-before the final packages were selected. This Skill passed **30/30** final
-Train, Validation, and sealed-Test cases and loaded **4.63% fewer Skill
-instruction tokens** than its paired control. Terra 5.6 Medium or a comparably
-capable executor such as Opus 4.8 is the minimum supported level. See
+[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) was extended to
+prioritize reliability before compression. Across the Scoville family, **797
+runs and supporting artifacts** were recorded, including **742 valid benchmark
+runs**. This Skill passed **30/30** final cases. Its always-loaded instructions
+use **2.51% fewer tokens than v1.0.6**. Minimum executor: Terra 5.6 Medium or
+comparable, such as Opus 4.8. See
 [benchmark evidence](docs/benchmark-evidence.md).
 
 ## License

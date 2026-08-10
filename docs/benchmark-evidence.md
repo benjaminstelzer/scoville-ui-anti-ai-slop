@@ -38,8 +38,9 @@ Token counts use `o200k_base` over UTF-8 Skill files.
 | Loaded Skill context over 30 executions | 71,691 | 68,370 | -3,321 (-4.63%) |
 
 The preceding GitHub package contained a 1,077-token core and 4,067 package
-tokens. The qualified version is therefore 27 core tokens smaller but 88 total
-package tokens larger: it retains the explicit local-exception reliability
+tokens. Compared directly with `v1.0.6`, the qualified version's always-loaded
+core is therefore 27 tokens smaller (-2.51%), while its complete package is 88
+tokens larger because it retains the explicit local-exception reliability
 repair. Complete package size is not runtime prompt cost because only selected
 references load.
 
