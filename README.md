@@ -1,12 +1,14 @@
 # Scoville UI Anti-AI-Slop
 
-Preserves the user's task while an interface is designed, changed, or reviewed.
+A polished interface can still lose the user's task. Scoville UI keeps that
+task visible while the pixels negotiate among themselves.
 
 Scoville UI is a framework-aware Agent Skill for hierarchy, layout, states,
 responsiveness, accessibility, usability, and rendered evidence. It follows the
 product's existing design system and platform language instead of inventing a
 second visual owner. It does not activate for backend-only work or wording
-alone.
+alone; visual quality needs an interface, which is an inconvenient but useful
+boundary.
 
 ## Why "Scoville"?
 
