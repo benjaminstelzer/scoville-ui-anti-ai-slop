@@ -1,187 +1,124 @@
 # Scoville UI Anti-AI-Slop
 
-Clarifies the interface. Keeps the design system in charge.
+Preserves the user's task while an interface is designed, changed, or reviewed.
 
-UI slop is not a particular font, gradient, radius, or card layout. It is an
-interface that looks finished while the task remains hard to understand, the
-hierarchy is accidental, states are unclear, narrow layouts discard content,
-or success is claimed from source code without inspecting the rendered result.
+Scoville UI is a framework-aware Agent Skill for hierarchy, layout, states,
+responsiveness, accessibility, usability, and rendered evidence. It follows the
+product's existing design system and platform language instead of inventing a
+second visual owner. It does not activate for backend-only work or wording
+alone.
 
-Scoville UI is an Agent Skill for designing, implementing, auditing, and
-refining interactive web, native mobile, desktop, and terminal interfaces. It
-applies framework-independent quality principles through the project's own
-components, tokens, variants, patterns, and supported APIs. It does not supply
-a fashionable visual preset.
+## Why "Scoville"?
 
-## Why "Scoville UI"?
+The family is named for useful signal that survives dilution. In UI work, the
+heat is the user's task—primary action, state, reading order, and error
+recovery—not making every button look ready for a chili-eating contest.
 
-The Scoville family is named for signal that remains detectable after
-dilution. In an interface, that signal is the user's task: the primary action,
-current state, reading order, and path out of an error should survive layers of
-components and styling. The goal is enough visual heat to reveal hierarchy,
-not to make every button look like it has entered a chili-eating contest.
+## How to use
+
+Name Scoville UI for interface design, implementation, or audit work:
+
+```text
+Use Scoville UI to redesign this settings screen within the product's existing design system. Preserve platform patterns, cover loading, empty, error, and success states, and verify the rendered result responsively.
+```
+
+```text
+Use Scoville UI to audit the current checkout for hierarchy, accessibility, keyboard use, responsive behavior, and recovery from errors. Do not change files.
+```
+
+```text
+Use Scoville UI with Scoville Code to implement this dialog in the owning framework. Reuse established components and verify both behavior and rendered states.
+```
+
+Explicit `$scoville-ui-anti-ai-slop` invocation also works on hosts that
+support named Skill invocation.
 
 ## Install
 
-Works with any coding agent that supports the Agent Skills format: a `SKILL.md`
-instruction file with its name and description at the top. Compatible agents
-include Claude Code and Codex.
-
-Usually, let your coding agent install the skill. Send it this prompt:
+Use an Agent Skills-compatible host and Terra 5.6 Medium or a comparably
+capable executor such as Opus 4.8. Ask the agent to install:
 
 ```text
-Install this Agent Skill from GitHub and make it available for my UI work:
+Install this Agent Skill and refresh the available Skill list:
 https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/tree/main/scoville-ui-anti-ai-slop
-Use Terra 5.6 Medium or a comparably capable executor such as Opus 4.8; this is the minimum supported capability level for this Skill.
+Keep the installed directory name scoville-ui-anti-ai-slop. Use Terra 5.6 Medium or a comparably capable executor such as Opus 4.8.
 ```
 
-Add "for all my projects" or "only for this project" when the installation
-scope matters. The agent should choose its supported skills directory, install
-the skill directory under the unchanged name `scoville-ui-anti-ai-slop`, and
-refresh its skill list.
+The final path must end in
+`<skills-dir>/scoville-ui-anti-ai-slop/SKILL.md`. For Claude Code, use
+`~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
+hosts use their supported Skills directory.
 
-If your agent cannot install skills itself, copy the repository's
-`scoville-ui-anti-ai-slop/` directory so the final path is:
-
-```text
-<skills-dir>/scoville-ui-anti-ai-slop/SKILL.md
-```
-
-For Claude Code, `<skills-dir>` is `~/.claude/skills/` for all projects or
-`.claude/skills/` inside a repository for that project only. For other agents,
-consult their documentation; paths differ per agent.
-
-**What it costs.** Compatible hosts expose compact discovery metadata before
-loading the full Skill instructions. After
-activation, the 1,050-token core selects framework alignment, UI quality, and
-rendered validation only when the task needs them. The complete installable
-package is 4,155 tokens, but references not selected by the route are not loaded.
-Compared with pre-optimization `v1.0.6`, the always-loaded core fell from 1,077
-to 1,050 tokens (-2.51%). Activating any Skill adds instructions to the prompt
-and can use materially more tokens than working without one. That overhead buys
-stronger design-system alignment, accessibility, responsive and state
-coverage, and more disciplined rendered evidence. Use Scoville UI when those
-safeguards matter; leave it inactive for a small, fast vibe-coding experiment
-when minimizing token use matters more. Provider usage also depends on the host
-and conversation. See
-[the benchmark evidence](docs/benchmark-evidence.md) for scope and limits.
+**What it costs.** The 1,050-token Core is 2.51% smaller than `v1.0.6`;
+framework, quality, and validation guidance loads only when needed. The added
+context buys design-system alignment, accessibility, state coverage, and
+rendered evidence. Use it for production interfaces; skip it for a disposable
+vibe-coding mockup when token use matters more. See
+[benchmark evidence](docs/benchmark-evidence.md).
+The [family run ledger](docs/optimization-history.md) shows the complete count.
 
 ## What it enforces
 
-- **Task and information clarity.** Primary decisions, supporting information,
-  and secondary actions receive a deliberate hierarchy through the mechanisms
-  the project already uses.
-- **Framework alignment.** Styled design systems own their visual language;
-  headless libraries own the behavior and semantics they implement; platform
-  stacks retain their platform conventions. The skill does not invent a second
-  token set, component library, or theme beside the real owner.
-- **Readable content.** Reading order, scaling, wrapping, localization, and
-  programmatic relationships survive realistic content instead of working only
-  in an ideal screenshot.
-- **Predictable interaction.** Relevant focus, keyboard, touch, state feedback,
-  error recovery, and accessible relationships remain intact.
-- **Responsive adaptation.** The task survives changes in space, content, text
-  size, orientation, and input method. Required content is not clipped or
-  hidden to manufacture a clean narrow view.
-- **Truthful evidence.** Builds and automated checks support the result but do
-  not replace rendered inspection. Unrendered behavior remains explicitly
-  unverified.
+- **The product keeps its visual owner.** Existing components, tokens,
+  semantics, and platform conventions come before generic redesign habits.
+- **The task has a hierarchy.** Primary decisions, supporting information, and
+  secondary actions remain distinguishable.
+- **Real states exist.** Loading, empty, error, disabled, success, focus,
+  keyboard, and touch behavior are covered when relevant.
+- **Responsive means adapted.** The task survives narrow, wide, zoomed, and
+  content-heavy conditions rather than merely shrinking politely.
+- **Accessibility is structural.** Reading order, names, relationships,
+  contrast, focus, and input behavior are checked in their real context.
+- **Evidence matches the claim.** Source inspection can prove structure;
+  rendered or interactive claims require rendered or interactive evidence.
 
-The full rules live in
+The complete contract is in
 [SKILL.md](scoville-ui-anti-ai-slop/SKILL.md).
 
-## Use with the Scoville family
+## How it works
 
-UI works independently. When companion Skills are installed, combine them only
-for the concerns they own.
+The Core resolves framework ownership and the requested UI outcome, then loads
+only the framework-alignment, UI-quality, or rendered-validation guidance that
+applies. Audit-only requests remain read-only. Source-only evidence is reported
+as source-only rather than being promoted to a browser result while nobody is
+looking.
 
-Use [Scoville Code Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
-for engineering scope, canonical code ownership, implementation integrity,
-risk, and proportionate proof. Use
-[Scoville Scribe Anti-AI-Slop](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
-for visible and accessible wording, terminology, localization contracts,
-factual meaning, and source fidelity.
+## Scoville family
 
-Use [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) when the
-interface work needs durable sequencing across independently resumable
-outcomes or handoffs. Plan owns project direction and Work Item lifecycle; UI
-owns the interface result and rendered evidence.
+Each Skill works independently. Combine only the concerns the task actually
+needs:
 
-Use [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff) to
-transfer the current interface state, ownership, evidence, and next safe action
-to another agent or session without replacing Plan's durable records.
-
-Mixed tasks use the relevant skills together. For an error state, Code proves
-the state transition, UI verifies placement, focus, and responsive behavior,
-and Scribe verifies the message. UI owns whether a required label or accessible
-name exists and is associated; Scribe owns what it says.
-
-## Design
-
-The skill first identifies the layer that owns each decision:
-
-- A styled design system owns semantic tokens, components, variants, and
-  supported customization paths.
-- A headless component library owns its implemented behavior and semantics, not
-  a visual language it does not provide.
-- A utility or application framework may supply coherent implementation values
-  without defining the product's hierarchy or visual direction.
-- A native, desktop, or terminal stack inherits its platform conventions.
-- A true greenfield surface starts with the user brief and platform defaults,
-  then makes only the minimum coherent, reversible local choices it needs.
-
-General UI principles fill only the gaps those owners leave. The skill has no
-preferred fonts, palettes, shadows, radii, card patterns, breakpoint matrix, or
-universal pixel values.
-
-When a web project names no accessibility target, the skill uses WCAG 2.2
-Level AA. Native, desktop, and terminal interfaces use the owning platform's
-current accessibility guidance. If the canonical owner cannot meet the
-applicable floor, the agent reports the conflict instead of quietly forking the
-design language.
-
-The agent conditionally loads three focused guides:
-
-- [references/framework-alignment.md](scoville-ui-anti-ai-slop/references/framework-alignment.md)
-  identifies the owning framework and supported customization path.
-- [references/ui-quality.md](scoville-ui-anti-ai-slop/references/ui-quality.md)
-  covers hierarchy, content, interaction, responsiveness, and accessibility.
-- [references/validation.md](scoville-ui-anti-ai-slop/references/validation.md)
-  separates source checks from rendered and interaction evidence.
-
-## Sources and inspirations
-
-- [WCAG 2.2](https://www.w3.org/TR/WCAG22/) for the default web accessibility
-  floor.
-- [MUI theming](https://mui.com/material-ui/customization/theming/) and
-  [Mantine theming](https://mantine.dev/theming/theme-object/) for theme and
-  token ownership in styled systems.
-- [Radix Primitives](https://www.radix-ui.com/primitives/docs/overview/introduction)
-  for the behavior-versus-appearance boundary of headless components.
-- [Fluent 2](https://fluent2.microsoft.design/),
-  [Carbon](https://carbondesignsystem.com/), and
-  [Atlassian Design System](https://atlassian.design/) for reusable product
-  conventions.
-- [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
-  for platform-owned interaction, adaptation, and accessibility conventions.
-
-## Repository contents
-
-The installable `scoville-ui-anti-ai-slop/` directory contains the core skill,
-three conditionally loaded references, and display metadata. This README, the
-changelog, and the MIT license remain at the repository root and are not loaded
-as skill instructions. The repository contains no executable software,
-framework database, assets, or runtime network fetches.
+- [Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm) explores
+  materially different mechanisms before selection.
+- [Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop) owns
+  engineering scope, implementation, risk, and validation.
+- [UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop) owns
+  interface hierarchy, framework fit, accessibility, and rendered evidence.
+- [Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop) owns
+  wording, terminology, factual meaning, and source fidelity.
+- [Plan](https://github.com/benjaminstelzer/scoville-plan) owns durable Plans,
+  Work Items, Decisions, and lifecycle state.
+- [Handoff](https://github.com/benjaminstelzer/scoville-handoff) transfers active
+  work to another agent or session.
 
 ## Status
 
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) was extended to
-prioritize reliability before compression. Across the five Scoville Skills,
-development recorded **1,019 optimization and evaluation runs**. This Skill
-passed **30/30** final cases. Its always-loaded instructions
-use **2.51% fewer tokens than pre-optimization v1.0.6**. Minimum executor: Terra
-5.6 Medium or comparable, such as Opus 4.8. See
+A reliability-first extension of
+[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) tested the six
+Scoville Skills across **1,201 optimization and evaluation runs**. Scoville UI
+passed **30/30 final cases** and its always-loaded instructions use **2.51%
+fewer tokens than v1.0.6**. See
 [benchmark evidence](docs/benchmark-evidence.md).
+
+## Sources
+
+- [Agent Skills specification](https://agentskills.io/specification) for the
+  portable package and progressive disclosure.
+- [Carbon Design System](https://carbondesignsystem.com/),
+  [Atlassian Design System](https://atlassian.design/), and
+  [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)
+  for system-owned components, patterns, and platform conventions.
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/) for accessibility requirements.
 
 ## License
 
