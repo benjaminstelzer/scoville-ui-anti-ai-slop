@@ -3,6 +3,20 @@
 A polished interface can still lose the user's task. Scoville UI keeps that
 task visible while the pixels negotiate among themselves.
 
+It usually looks harmless:
+
+- A product with an established design system receives a fresh local language
+  of rounded cards, gradients, and pills because this screen wanted a journey.
+- Primary, secondary, and destructive actions all receive equal emphasis. The
+  hierarchy is now democratic and therefore useless.
+- The happy path looks polished; loading, empty, error, focus, keyboard, and
+  long-content states have quietly missed the launch.
+- The desktop screenshot is excellent. On mobile, the primary action lives
+  beyond a horizontal scroll that users can discover through archaeology.
+
+That is UI slop: familiar polish substitutes for the task, the product's visual
+owner, and rendered evidence. The gradient survived. The task did not.
+
 Scoville UI is a framework-aware Agent Skill for hierarchy, layout, states,
 responsiveness, accessibility, usability, and rendered evidence. It follows the
 product's existing design system and platform language instead of inventing a
