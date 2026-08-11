@@ -10,8 +10,7 @@ and clarity; never replace its design language.
 
 **OPT-OUT:** If the user explicitly excludes this Skill, STOP before references,
 Skill tools, changes, or Skill-derived completion claims. If higher-authority
-host/project rules require it, report exact conflict. A sibling opt-out affects
-that sibling only; never reproduce its contract.
+host/project rules require it, report exact conflict.
 
 Apply the highest owner per concern:
 
@@ -41,18 +40,18 @@ Lower sources never override higher owners; report material conflicts.
 
 ## Skill family
 
-Works alone. Compose only independently active siblings; never require, install,
-or simulate optional Plan, Code, or Scribe.
+Family standalone: discovery != installed|active|applicable|required;
+absent|inactive => ignore/no require|install|simulate|reimplement;
+active+applicable => owner concern only, self continues; opt-out local. Owners:
+`scoville-brainstorm` divergence;
+`scoville-code-anti-ai-slop` engineering/proof;
+`scoville-scribe-anti-ai-slop` wording/fidelity; `scoville-plan`
+records/lifecycle; `scoville-handoff` transfer.
 
-- **Code:** engineering scope, code ownership, integrity, risk, proof.
-- **UI:** framework alignment, hierarchy, layout, interaction presentation,
-  responsive adaptation, rendered evidence; text layout, legibility, space,
-  scaling; required label or accessible name existence and association.
-- **Scribe:** meaning, terminology, localization, fidelity of variable
-  visible/accessibility wording. Fixed source-exact strings do not activate it.
-
+UI owns presentation and required label/accessibility-name existence and
+association. Fixed source-exact strings do not activate Scribe.
 When active, Scribe owns what text says; UI owns its presentation. Do not copy
-or reverify siblings. UI remains complete alone.
+or reverify siblings.
 
 ## Workflow
 
