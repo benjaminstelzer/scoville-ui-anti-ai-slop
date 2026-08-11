@@ -9,7 +9,7 @@ It usually looks harmless:
   of rounded cards, gradients, and pills because this screen wanted a journey.
 - Primary, secondary, and destructive actions all receive equal emphasis. The
   hierarchy is now democratic and therefore useless.
-- The happy path looks polished; loading, empty, error, focus, keyboard, and
+- The happy path looks polished. Loading, empty, error, focus, keyboard, and
   long-content states have quietly missed the launch.
 - The desktop screenshot is excellent. On mobile, the primary action lives
   beyond a horizontal scroll that users can discover through archaeology.
@@ -21,14 +21,14 @@ Scoville UI is a framework-aware Agent Skill for hierarchy, layout, states,
 responsiveness, accessibility, usability, and rendered evidence. It follows the
 product's existing design system and platform language instead of inventing a
 second visual owner. It does not activate for backend-only work or wording
-alone; visual quality needs an interface, which is an inconvenient but useful
+alone. Visual quality needs an interface, which is an inconvenient but useful
 boundary.
 
 ## Why "Scoville"?
 
 The family is named for useful signal that survives dilution. In UI work, the
-heat is the user's task—primary action, state, reading order, and error
-recovery—not making every button look ready for a chili-eating contest.
+heat is the user's task - primary action, state, reading order, and error
+recovery - not making every button look ready for a chili-eating contest.
 
 ## How to use
 
@@ -65,10 +65,10 @@ The final path must end in
 `~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
 hosts use their supported Skills directory.
 
-**What it costs.** The 1,050-token Core is 2.51% smaller than `v1.0.6`;
-framework, quality, and validation guidance loads only when needed. The added
+**What it costs.** The 1,050-token Core is 2.51% smaller than `v1.0.6`.
+Framework, quality, and validation guidance loads only when needed. The added
 context buys design-system alignment, accessibility, state coverage, and
-rendered evidence. Use it for production interfaces; skip it for a disposable
+rendered evidence. Use it for production interfaces. Skip it for a disposable
 vibe-coding mockup when token use matters more. See
 [benchmark evidence](docs/benchmark-evidence.md).
 The [family run ledger](docs/optimization-history.md) shows the complete count.
@@ -85,8 +85,8 @@ The [family run ledger](docs/optimization-history.md) shows the complete count.
   content-heavy conditions rather than merely shrinking politely.
 - **Accessibility is structural.** Reading order, names, relationships,
   contrast, focus, and input behavior are checked in their real context.
-- **Evidence matches the claim.** Source inspection can prove structure;
-  rendered or interactive claims require rendered or interactive evidence.
+- **Evidence matches the claim.** Source inspection can prove structure.
+  Rendered or interactive claims require rendered or interactive evidence.
 
 The complete contract is in
 [SKILL.md](scoville-ui-anti-ai-slop/SKILL.md).
