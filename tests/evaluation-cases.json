@@ -1,23 +1,95 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "skill": "scoville-ui-anti-ai-slop",
   "cases": [
     {
-      "id": "polished-greenfield-direction",
-      "given": "A new responsive incident dashboard has no design system or visual precedent, and polished presentation is part of the outcome.",
+      "id": "design-installed-but-inactive",
+      "given": "Scoville Design may be installed, but its instructions are absent from the current task context.",
       "expect": [
-        "Name a deliberate direction grounded in incident triage and information priority.",
-        "Apply it consistently through hierarchy, density, typography, shape, and interaction treatment.",
-        "Do not prescribe a generic palette or claim one screen establishes a product-wide system."
+        "Do not search for, load, require, simulate, or reimplement Design.",
+        "Resolve ownership from the incumbent product system, framework, local evidence, and UI standalone fallback.",
+        "Do not claim installation changed the route."
       ]
     },
     {
-      "id": "framework-owned-interface",
-      "given": "A Mantine application already defines theme tokens, variants, and shared components.",
+      "id": "design-only",
+      "given": "Design is active for a Greenfield UI direction and UI is not active.",
       "expect": [
-        "Preserve Mantine and project ownership instead of imposing a new greenfield direction.",
-        "Reuse semantic tokens, variants, and shared components.",
-        "Treat any local extension as a demonstrated gap at the canonical owner."
+        "Design may define and inspect the primary rendered state through the available artifact owner.",
+        "Responsive, state, semantic, framework, and accessibility mechanics remain explicitly unverified.",
+        "No UI implementation or proof claim is invented."
+      ]
+    },
+    {
+      "id": "ui-only-greenfield-fallback",
+      "given": "UI is active, Design is absent, and a responsive incident dashboard has no design system or visual precedent.",
+      "expect": [
+        "Retain the bounded standalone Greenfield direction grounded in incident triage and task priority.",
+        "Apply it consistently through hierarchy, density, typography, shape, states, and interaction treatment.",
+        "Do not prescribe a generic palette or claim one screen establishes a mature product-wide system."
+      ]
+    },
+    {
+      "id": "both-active-composed-greenfield",
+      "given": "Design and UI are active. Design supplies a consequential record for hierarchy, workflow, typography, spacing, responsive intent, protected decisions, and validation target.",
+      "expect": [
+        "Consume the Design record after higher owners and without re-deciding the settled concerns.",
+        "Implement through canonical framework components, tokens, states, semantics, focus/input behavior, and responsive mechanisms.",
+        "Validate the supplied target and report implementation evidence separately from design judgment."
+      ]
+    },
+    {
+      "id": "incumbent-system-outranks-design",
+      "given": "A Mantine application defines theme tokens, variants, and shared wrappers; active Design proposes a conflicting owner-level visual-system change.",
+      "expect": [
+        "Keep the incumbent product design system above the Design proposal in precedence.",
+        "Do not silently override or create a local parallel visual language.",
+        "Implement an owner-level change only after the applicable higher owner accepts it."
+      ]
+    },
+    {
+      "id": "design-opt-out",
+      "given": "The user explicitly excludes Scoville Design but keeps UI active for a Greenfield component.",
+      "expect": [
+        "Do not use Design instructions or claims.",
+        "Use UI's bounded standalone Greenfield fallback and canonical framework mechanisms.",
+        "Keep the opt-out local to Design."
+      ]
+    },
+    {
+      "id": "ui-opt-out",
+      "given": "The user explicitly excludes Scoville UI while Design remains active for an interface direction.",
+      "expect": [
+        "Stop UI before references, changes, tools, or UI-derived completion claims.",
+        "Do not block Design from its own concern.",
+        "Leave responsive, semantic, interaction, framework, and UI accessibility mechanics unverified."
+      ]
+    },
+    {
+      "id": "neither-active",
+      "given": "Neither Design nor UI instructions are active in the current task context.",
+      "expect": [
+        "Neither Skill changes ownership or behavior.",
+        "Do not infer activation from discovery or installation.",
+        "Make no Skill-derived completion claim."
+      ]
+    },
+    {
+      "id": "design-ui-constraint-loop",
+      "given": "UI discovers that the selected framework cannot implement one recorded responsive decision without breaking supported component behavior.",
+      "expect": [
+        "Report the exact implementation constraint and affected concern.",
+        "Do not silently redesign or weaken the component mechanics.",
+        "Design revises only the affected decision and UI re-implements and re-verifies it."
+      ]
+    },
+    {
+      "id": "canonical-design-record",
+      "given": "A consequential Design-to-UI handoff is required.",
+      "expect": [
+        "Record concern, decision, intended effect, authority/source, preserved constraints, and allowed variation.",
+        "Record any deliberate exception and compensation, validation target, and current evidence status.",
+        "Do not replace the record with an untyped visual summary."
       ]
     },
     {

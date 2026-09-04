@@ -1,4 +1,4 @@
 interface:
   display_name: "Scoville UI Anti-AI-Slop"
-  short_description: "Keeps the user's task visible through the interface"
-  default_prompt: "Use $scoville-ui-anti-ai-slop to improve this interface while preserving its design system."
+  short_description: "Implements UI through its design system"
+  default_prompt: "Use $scoville-ui-anti-ai-slop to implement and verify this interface through its framework and design system."

@@ -1,5 +1,45 @@
 # Changelog
 
+## 2026-09-04: Optional Scoville Design composition (v1.1.0)
+
+### Changed
+
+- Moved design-system definition, art direction, workflow intent, hierarchy,
+  typography, and spacing judgment to an active and applicable Scoville Design
+  owner.
+- Kept strict framework implementation, component states, semantics, focus and
+  input behavior, announcements, responsive mechanics, and rendered proof in
+  Scoville UI.
+- Preserved the incumbent product design system above a new Design proposal.
+- Preserved a bounded standalone Greenfield fallback when Design is absent,
+  inactive, inapplicable, or explicitly excluded.
+- Added a canonical Design-to-UI record and an implementation-constraint loop
+  that returns only the affected decision instead of silently redesigning.
+- Added an ownership-only route so a hypothetical owner/fallback
+  classification does not load quality or validation guidance merely because
+  the surface is Greenfield or polished.
+
+### Validation
+
+- Ten active-context SOL 5.6 XHigh composition cases passed.
+- Adjudicated UI v2 passed 3/3 open Validation and 4/4 consumed Test
+  regressions.
+- SkillOpt found no improving prompt candidate and retained the revised source
+  candidate.
+- An open Terra High UI-only probe first returned the correct owners but loaded
+  all three references. The focused routing repair then passed 1/1 hard,
+  behavior, and efficiency with only Core plus Framework loaded.
+- An open composed ownership probe returned `design / ui / ui` from Core alone
+  without reading or simulating Design. A legacy expectation to load Framework
+  was recorded as overbroad because no implementation path was requested.
+- The current five-file UI package matches manifest
+  `FD255A274E2D92C6DDA14CAD2A85FF0E7702960CEE6B2D3B9F20E04A78A78875`
+  and passes canonical Skill validation plus the static 11-case composition
+  fixture check.
+- Historical final UI evidence is not reused as proof for this rescope.
+  Composition and post-diagnosis regressions are configuration-specific,
+  not a new unseen holdout. See [release validation](docs/release-validation.md).
+
 ## 2026-08-19: Public validation wording (v1.0.16)
 
 ### Changed

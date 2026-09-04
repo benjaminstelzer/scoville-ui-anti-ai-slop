@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ui-comp-test-active-design-implementation",
+    "task_type": "ui_design_composition_probe",
+    "prediction": {
+      "task_text": "Routing-only hypothetical ownership probe. Design and UI are active. A complete Design record settles a new account-recovery workflow, responsive intent, typography, and spacing. Implement it through the supported framework path and prove keyboard, error, loading, and narrow-width behavior. Read only applicable UI references. Do not edit files. Return only the contracted JSON.",
+      "files": {
+        "scope.txt": "No additional context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with string keys status, design_decision_owner, implementation_owner, and proof_owner. Use only these exact values. status: ok, ui-inactive, owner-conflict, opted-out, not-active, design-revision-required, or record-required. owner fields: design, ui, ui-standalone-fallback, incumbent-product-system, design-bounded, or none.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "design_decision_owner": "design",
+        "implementation_owner": "ui",
+        "proof_owner": "ui"
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "forbidden_file_reads": [
+        "scope.txt"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 4
+    }
+  },
+  {
+    "id": "ui-comp-test-incumbent-accessibility",
+    "task_type": "ui_design_composition_probe",
+    "prediction": {
+      "task_text": "Routing-only hypothetical ownership probe. Design is absent. An incumbent product system fixes the visual language. UI must correct semantics, focus order, validation messaging, and responsive state behavior without redefining tokens or art direction, then supply rendered and interaction proof. Read only applicable UI references. Do not edit files. Return only the contracted JSON.",
+      "files": {
+        "scope.txt": "No additional context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with string keys status, design_decision_owner, implementation_owner, and proof_owner. Use only these exact values. status: ok, ui-inactive, owner-conflict, opted-out, not-active, design-revision-required, or record-required. owner fields: design, ui, ui-standalone-fallback, incumbent-product-system, design-bounded, or none.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "design_decision_owner": "incumbent-product-system",
+        "implementation_owner": "ui",
+        "proof_owner": "ui"
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "forbidden_file_reads": [
+        "scope.txt"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 4
+    }
+  },
+  {
+    "id": "ui-comp-test-inapplicable-design-greenfield",
+    "task_type": "ui_design_composition_probe",
+    "prediction": {
+      "task_text": "Routing-only hypothetical ownership probe. Design instructions are present but explicitly inapplicable to this concern. UI remains active for a Greenfield transactional flow with no incumbent visual owner and must implement and validate all required states. Read only applicable UI references. Do not edit files. Return only the contracted JSON.",
+      "files": {
+        "scope.txt": "No additional context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with string keys status, design_decision_owner, implementation_owner, and proof_owner. Use only these exact values. status: ok, ui-inactive, owner-conflict, opted-out, not-active, design-revision-required, or record-required. owner fields: design, ui, ui-standalone-fallback, incumbent-product-system, design-bounded, or none.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "design_decision_owner": "ui-standalone-fallback",
+        "implementation_owner": "ui",
+        "proof_owner": "ui"
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "forbidden_file_reads": [
+        "scope.txt"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 4
+    }
+  },
+  {
+    "id": "ui-comp-test-bounded-design-with-system",
+    "task_type": "ui_design_composition_probe",
+    "prediction": {
+      "task_text": "Routing-only hypothetical ownership probe. An incumbent system fixes tokens and component variants. Active Design has chosen the page hierarchy and workflow inside those constraints. UI must map that bounded decision to supported components and provide responsive and state proof. Read only applicable UI references. Do not edit files. Return only the contracted JSON.",
+      "files": {
+        "scope.txt": "No additional context.\n"
+      },
+      "output_contract": "Return exactly one JSON object with string keys status, design_decision_owner, implementation_owner, and proof_owner. Use only these exact values. status: ok, ui-inactive, owner-conflict, opted-out, not-active, design-revision-required, or record-required. owner fields: design, ui, ui-standalone-fallback, incumbent-product-system, design-bounded, or none.",
+      "skill_activation": "explicit"
+    },
+    "scoring": {
+      "expected": {
+        "status": "ok",
+        "design_decision_owner": "design-bounded",
+        "implementation_owner": "ui",
+        "proof_owner": "ui"
+      },
+      "required_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "forbidden_file_reads": [
+        "scope.txt"
+      ],
+      "exact_once_file_reads": [
+        ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+        ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+      ],
+      "required_read_phases": [
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/SKILL.md"
+        ],
+        [
+          ".agents/skills/scoville-ui-anti-ai-slop/references/framework-alignment.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/ui-quality.md",
+          ".agents/skills/scoville-ui-anti-ai-slop/references/validation.md"
+        ]
+      ],
+      "required_command_patterns": [],
+      "forbidden_command_patterns": [
+        "curl|wget|Invoke-WebRequest|Set-Content|Remove-Item|apply_patch"
+      ],
+      "max_shell_calls": 4
+    }
+  }
+]

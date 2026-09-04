@@ -15,6 +15,11 @@ tests, not a visual recipe.
 
 ## Start with the user task
 
+**Design decision:** Primary-task priority, information sequence, and intended
+action hierarchy belong to active Design. Consume its record when supplied.
+**UI implementation floor:** Required controls, content, semantics, and task
+completion remain available through the owning framework.
+
 Make the primary task and its next meaningful action understandable from the
 interface, not from implementation knowledge. Secondary actions and supporting
 information should remain available without competing equally for attention.
@@ -33,6 +38,10 @@ canonical content owner permits it.
 
 ## Make relationships perceptible
 
+**Design decision:** Active Design owns intended grouping, hierarchy, density,
+and deliberate visual exceptions. **UI implementation floor:** Implement those
+relations with canonical components/tokens and preserve semantic relationships.
+
 Use the owning system's hierarchy, grouping, alignment, sequence, and emphasis
 mechanisms so related information reads together and distinct concerns remain
 distinct. Visual difference must represent a real difference in meaning or
@@ -46,6 +55,11 @@ difference. Fix accidental drift at the canonical owner when the fix is in
 scope; otherwise report it without expanding the task.
 
 ## Preserve readable content
+
+**Design decision:** Active Design owns typography, spacing roles, and intended
+reading emphasis. **UI implementation floor:** UI retains text scaling, zoom,
+wrapping, truncation access, label association, theme/state contrast, and
+supported fallback mechanics.
 
 Use the project or platform's typography and spacing language while protecting:
 
@@ -64,6 +78,10 @@ the presentation constraint here.
 
 ## Make interaction predictable
 
+**Design decision:** Active Design owns intended affordance emphasis, feedback
+priority, and recovery experience. **UI implementation floor:** UI retains
+component semantics, focus/input behavior, announcements, and state transitions.
+
 Use existing components and platform conventions so affordance and behavior
 agree. For the states introduced or changed by the task, preserve the cues and
 recovery needed to answer:
@@ -81,6 +99,11 @@ owning component's semantics or state model.
 
 ## Adapt instead of merely shrinking
 
+**Design decision:** Active Design owns the intended responsive transformation
+and priority changes. **UI implementation floor:** UI retains framework-valid
+breakpoints, reflow mechanics, content/state persistence, input behavior, and
+rendered proof.
+
 Responsive behavior preserves the task as space, content, text size, input
 method, orientation, or window mode changes. Determine transformations from the
 content and the project's supported breakpoints rather than imposing a fixed
@@ -95,6 +118,10 @@ mechanisms.
 
 ## Design states as part of the same interface
 
+**Design decision:** Active Design owns intended state presentation, priority,
+and recovery. **UI implementation floor:** UI retains component state coverage,
+semantics, focus, announcements, transitions, and implementation proof.
+
 Review only states affected by the change, including relevant initial, empty,
 loading, partial, success, error, unavailable, and permission-dependent states.
 Keep structure stable enough for orientation while making the state change
@@ -105,6 +132,10 @@ Do not manufacture a complete state matrix for an unaffected component. The
 floor is completeness for the requested flow, not ceremonial coverage.
 
 ## Keep accessibility structural
+
+**Design decision:** Active Design owns inclusive communication and equivalent
+meaning. **UI implementation floor:** UI retains semantic, interactive,
+platform, scaling, input-alternative, status, and rendered mechanics.
 
 Accessibility is not a final color pass. Confirm that required names, labels,
 roles, values, relationships, reading order, focus behavior, input alternatives,
