@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.2 - 2026-09-05
+
+- Move repository development into `development/` and keep the installable Skill in its own top-level directory.
+- Update current paths while retaining historical evidence and its path mapping.
+
 ## v1.1.1 - 2026-09-05
 
 - Shortened the README, moved contributor layout notes to docs/maintenance.md, and made agent installation the primary path. Safety and evidence limits remain explicit.
@@ -45,7 +50,7 @@
   fixture check.
 - Historical final UI evidence is not reused as proof for this rescope.
   Composition and post-diagnosis regressions are configuration-specific,
-  not a new unseen holdout. See [release validation](docs/release-validation.md).
+  not a new unseen holdout. See [release validation](development/docs/release-validation.md).
 
 ## 2026-08-19: Public validation wording (v1.0.16)
 

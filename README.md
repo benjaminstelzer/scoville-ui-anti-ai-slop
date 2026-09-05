@@ -117,7 +117,7 @@ screen. Audit-only requests remain read-only. Source-only evidence stays
 source-only rather than becoming a browser result while nobody is looking.
 
 For repository structure and development tools, see
-[maintenance notes](docs/maintenance.md).
+[maintenance notes](development/docs/maintenance.md).
 
 ## Scoville family
 
@@ -149,9 +149,11 @@ later 3/3 open Validation plus 4/4 consumed Test regressions. These are
 configuration-specific results, not an unseen holdout or broad proof of design
 quality. Earlier 30/30 UI evidence belongs to another package.
 
-See [composition evidence](docs/design-composition-evidence.md) and
-[release validation](docs/release-validation.md) for exact identities and limits.
+See [composition evidence](development/docs/design-composition-evidence.md) and
+[release validation](development/docs/release-validation.md) for exact identities and limits.
 Adding a license to the package does not add behavioral evidence.
+
+Repository development and the current path mapping are in [development/](development/README.md).
 
 ## Sources
 
