@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.1 - 2026-09-05
+
+- Shortened the README, moved contributor layout notes to docs/maintenance.md, and made agent installation the primary path. Safety and evidence limits remain explicit.
+- Added separate prompts for this Skill and the complete live-verified Scoville suite.
+- Included the repository license in the copied Skill package. UI instructions and routing are unchanged.
+- Documented package and development boundaries. Frozen benchmark fixtures keep their recorded paths.
+
 ## 2026-09-04: Optional Scoville Design composition (v1.1.0)
 
 ### Changed

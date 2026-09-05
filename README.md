@@ -44,10 +44,6 @@ Use Scoville UI to audit the current checkout for hierarchy, accessibility, keyb
 ```
 
 ```text
-Use Scoville UI with Scoville Code to implement this dialog in the owning framework. Reuse established components and verify both behavior and rendered states.
-```
-
-```text
 Use Scoville Design with Scoville UI. Design owns the workflow, hierarchy, typography, spacing, and design-system decision. UI implements that record through the existing framework and proves component states and interactions.
 ```
 
@@ -56,27 +52,40 @@ support named Skill invocation.
 
 ## Install
 
-Use an Agent Skills-compatible host with file access and the tools needed to
-implement and inspect your interface. Ask the agent to install:
+### Install this Skill
+
+In a local Codex or Claude Code session, ask:
 
 ```text
-Install this Agent Skill from GitHub and make it available for all my projects:
+Install this Agent Skill for all my projects from this exact package directory:
 https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/tree/main/scoville-ui-anti-ai-slop
-Keep the installed directory name scoville-ui-anti-ai-slop.
+Preserve existing customizations and ask before overwriting conflicting files.
+Report the installed location and whether the host discovers the Skill.
 ```
 
-The final path must end in
-`<skills-dir>/scoville-ui-anti-ai-slop/SKILL.md`. For Claude Code, use
-`~/.claude/skills/` globally or `.claude/skills/` inside one project. Other
-hosts use their supported Skills directory.
+The agent needs source access and permission to write to its personal Skills
+location. Manual fallback: [Codex Skills guide](https://learn.chatgpt.com/docs/build-skills)
+or [Claude Code Skills guide](https://code.claude.com/docs/en/skills).
 
-**What it costs.** The complete `SKILL.md`, including metadata, uses 1,533
-`o200k_base` tokens. Framework,
-quality, and validation guidance loads only when needed. The added ownership
-contract preserves Design decisions when both Skills apply and preserves UI's
-standalone fallback when Design does not. Use it for production interfaces.
-Skip it for a disposable mockup when token use matters more. See
-[composition evidence](docs/design-composition-evidence.md).
+Install only the linked package for the focused option.
+Implementation and rendered checks need the relevant framework and browser tools.
+
+### Install the complete Scoville suite
+
+```text
+Install the complete Scoville Skill suite for all my projects. Fetch and install every exact package directory below:
+
+https://github.com/benjaminstelzer/scoville-brainstorm/tree/main/scoville-brainstorm
+https://github.com/benjaminstelzer/scoville-research/tree/main/scoville-research
+https://github.com/benjaminstelzer/scoville-code-anti-ai-slop/tree/main/scoville-code-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-design-anti-ai-slop/tree/main/scoville-design-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/tree/main/scoville-ui-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop/tree/main/scoville-scribe-anti-ai-slop
+https://github.com/benjaminstelzer/scoville-plan/tree/main/scoville-plan
+https://github.com/benjaminstelzer/scoville-handoff/tree/main/scoville-handoff
+
+Preserve existing customizations and ask before overwriting conflicting files. Report every installed location and whether the host discovers each Skill.
+```
 
 ## What it enforces
 
@@ -107,6 +116,9 @@ only the affected decision for revision instead of silently redesigning the
 screen. Audit-only requests remain read-only. Source-only evidence stays
 source-only rather than becoming a browser result while nobody is looking.
 
+For repository structure and development tools, see
+[maintenance notes](docs/maintenance.md).
+
 ## Scoville family
 
 Each Skill works independently. Combine only the concerns the task actually
@@ -132,22 +144,14 @@ needs:
 
 ## Status
 
-Version 1.1.0 adds optional composition with Scoville Design.
-A reliability-first extension of
-[Microsoft SkillOpt](https://github.com/microsoft/SkillOpt) tested the revised
-ownership boundary with SOL 5.6 XHigh. Ten active-context composition cases
-passed, including installed-but-inactive Design, UI-only fallback, both active,
-incumbent precedence, both opt-outs, the implementation-constraint loop, and
-portable framework, quality, and validation regressions. A later adjudicated
-suite passed 3/3 open Validation and 4/4 consumed Test regressions. The current
-five-file UI manifest is
-`FD255A274E2D92C6DDA14CAD2A85FF0E7702960CEE6B2D3B9F20E04A78A78875`.
+The Design/UI ownership boundary has ten active-context composition cases and
+later 3/3 open Validation plus 4/4 consumed Test regressions. These are
+configuration-specific results, not an unseen holdout or broad proof of design
+quality. Earlier 30/30 UI evidence belongs to another package.
 
-Historical 30/30 UI evidence belongs to the earlier package. The composition
-and post-diagnosis regression evidence is configuration-specific, not a new
-unseen holdout or broad proof of design quality. See
-[composition evidence](docs/design-composition-evidence.md) and
-[release validation](docs/release-validation.md) for scope and limits.
+See [composition evidence](docs/design-composition-evidence.md) and
+[release validation](docs/release-validation.md) for exact identities and limits.
+Adding a license to the package does not add behavioral evidence.
 
 ## Sources
 
@@ -161,4 +165,4 @@ unseen holdout or broad proof of design quality. See
 
 ## License
 
-MIT - see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
