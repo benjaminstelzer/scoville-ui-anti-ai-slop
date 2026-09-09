@@ -50,6 +50,10 @@ Use Scoville Design with Scoville UI. Design owns the workflow, hierarchy, typog
 Explicit `$scoville-ui-anti-ai-slop` invocation also works on hosts that
 support named Skill invocation.
 
+## Compatibility
+
+Any Agent Skills host that can read references/ and run the project's framework toolchain. Rendered and interaction proof needs a browser, renderer or screenshot tool provided by the host; build or source alone cannot prove rendering. No bundled scripts, no network access required. Developed for Codex and Claude Code; other hosts untested.
+
 ## Install
 
 ### Install this Skill
