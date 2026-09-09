@@ -1,6 +1,7 @@
 ---
 name: scoville-ui-anti-ai-slop
 description: Framework-aware guardrail for implementing and auditing UI through the product framework and incumbent design system. Use for components, states, responsiveness, accessibility mechanics, interaction, and rendered proof. When Scoville Design is active and applicable, consume its design decisions without re-deciding them; otherwise retain a bounded standalone Greenfield fallback. Excludes backend-only work and prose.
+compatibility: "Any Agent Skills host that can read references/ and run the project's framework toolchain. Rendered and interaction proof needs a browser, renderer or screenshot tool provided by the host; build or source alone cannot prove rendering. No bundled scripts, no network access required. Developed for Codex and Claude Code; other hosts untested."
 ---
 
 Implement and verify UI through its canonical framework, platform, and design
@@ -88,7 +89,10 @@ or reverify siblings.
 6. Verify only rendered conditions able to disprove. Report rendered, source,
    and unverified evidence separately. Mark unimplemented or source-only work
    unrendered and rendered behavior unverified; never load Validation merely to
-   state this boundary.
+   state this boundary. Rendered and interaction proof requires a host-provided
+   browser, renderer, or screenshot capability whose output the agent can
+   actually view. Without it, report rendered and interaction behavior as
+   unverified. Build, source, or an unviewed screenshot file never substitutes.
 
 ## Reference router
 
