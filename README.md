@@ -72,7 +72,6 @@ location. Manual fallback: [Codex Skills guide](https://learn.chatgpt.com/docs/b
 or [Claude Code Skills guide](https://code.claude.com/docs/en/skills).
 
 Install only the linked package for the focused option.
-Implementation and rendered checks need the relevant framework and browser tools.
 
 ### Install the complete Scoville suite
 
