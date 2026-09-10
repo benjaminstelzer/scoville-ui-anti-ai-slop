@@ -1,19 +1,24 @@
 # Changelog
 
+## v1.2.1 - 2026-09-10
+
+- Restored the missing list markers in the two preceding changelog entries.
+  The installable Skill is unchanged.
+
 ## v1.2.0 - 2026-09-10
 
-Require source correction before measurement and viewed-render checks. Add a
-consistency inventory and explicit visual comparisons, with authored units,
-independent expectations and before-write custom styling justification.
-Keep framework owners and platform exceptions intact across standalone and composed audits.
-
-Behavior regression testing is deferred. This release makes no new browser,
-live-agent or cross-host qualification claim.
+- Require source correction before measurement and viewed-render checks. Add a
+  consistency inventory and explicit visual comparisons, with authored units,
+  independent expectations and before-write custom styling justification.
+- Keep framework owners and platform exceptions intact across standalone and
+  composed audits.
+- Defer behavior regression testing. This release makes no new browser,
+  live-agent or cross-host qualification claim.
 
 ## v1.1.4 - 2026-09-10
 
-Removed development-only material and narrowed changelog scope.
-No Skill behavior changed in that release.
+- Removed development-only material and narrowed changelog scope. No Skill
+  behavior changed in that release.
 
 ## v1.1.3 - 2026-09-09
 
