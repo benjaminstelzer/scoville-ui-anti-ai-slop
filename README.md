@@ -50,9 +50,26 @@ Use Scoville Design with Scoville UI. Design owns the workflow, hierarchy, typog
 Explicit `$scoville-ui-anti-ai-slop` invocation also works on hosts that
 support named Skill invocation.
 
+## Source-first checks and consistency audits
+
+Implementation follows source inspection and correction, measured relationships,
+then a viewed render. Custom styling needs a concrete owner/API justification
+before it is written. Authored units and expressions remain distinct from their
+computed pixel values and visible geometry.
+
+An ordinary request to check a page for consistency uses a read-only inventory
+of its regions, variants and relevant states, including content below the fold.
+Every entry maps to source, measurement and visual evidence or a named gap.
+The visual routine compares intended edges, text position, apparent whitespace,
+control interiors, icons, wrapping and clipping. Sampling limits remain explicit.
+
+These are instruction changes. Browser and live-agent regression testing of this
+revision is deferred; source checks and an independent review do not establish
+runtime effectiveness.
+
 ## Compatibility
 
-Any Agent Skills host that can read references/ and run the project's framework toolchain. Rendered and interaction proof needs a browser, renderer or screenshot tool provided by the host; build or source alone cannot prove rendering. No bundled scripts, no network access required. Developed for Codex and Claude Code; other hosts untested.
+Agent Skills host with reference access and the project's framework toolchain. Geometry proof needs DOM or equivalent platform measurement; visual proof needs actually viewed renders, and interaction proof needs an interactive runtime. Source-only or screenshot-only tasks report missing evidence. No bundled scripts or mandatory network access. Developed for Codex and Claude Code; other hosts untested.
 
 ## Install
 

@@ -54,6 +54,11 @@ identical. Preserve a deliberate exception when it communicates a genuine
 difference. Fix accidental drift at the canonical owner when the fix is in
 scope; otherwise report it without expanding the task.
 
+For consistency, compare owner-backed equivalent relationships and component
+variants. Native differences are not defects merely because they break a
+numeric scale. Use Validation's geometry and optical diagnosis separately,
+including inventory coverage when auditing a named page.
+
 ## Preserve readable content
 
 **Design decision:** Active Design owns typography, spacing roles, and intended

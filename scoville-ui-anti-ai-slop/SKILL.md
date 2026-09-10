@@ -1,7 +1,7 @@
 ---
 name: scoville-ui-anti-ai-slop
 description: Framework-aware guardrail for implementing and auditing UI through the product framework and incumbent design system. Use for components, states, responsiveness, accessibility mechanics, interaction, and rendered proof. When Scoville Design is active and applicable, consume its design decisions without re-deciding them; otherwise retain a bounded standalone Greenfield fallback. Excludes backend-only work and prose.
-compatibility: "Any Agent Skills host that can read references/ and run the project's framework toolchain. Rendered and interaction proof needs a browser, renderer or screenshot tool provided by the host; build or source alone cannot prove rendering. No bundled scripts, no network access required. Developed for Codex and Claude Code; other hosts untested."
+compatibility: "Agent Skills host with reference access and the project's framework toolchain. Geometry proof needs DOM or equivalent platform measurement; visual proof needs actually viewed renders, and interaction proof needs an interactive runtime. Source-only or screenshot-only tasks report missing evidence. No bundled scripts or mandatory network access. Developed for Codex and Claude Code; other hosts untested."
 ---
 
 Implement and verify UI through its canonical framework, platform, and design
@@ -86,7 +86,13 @@ or reverify siblings.
 5. Make the smallest framework-valid change. If a real implementation
    constraint conflicts with Design, report it against the affected record;
    Design revises that decision and UI re-implements it. Do not silently redesign.
-6. Verify only rendered conditions able to disprove. Report rendered, source,
+6. Before the first layout measurement or viewed render, inspect generating
+   code and CSS and correct known in-scope implementation defects. Then measure
+   actual geometry, then view the result. Repeat affected gates after each
+   layout edit. Audit reports source defects first and continues read-only.
+   Preserve authored units/expressions separately from computed pixels.
+   Justify custom styling before writing it against a concrete owner gap.
+   Verify only relevant rendered conditions able to disprove. Report rendered, source,
    and unverified evidence separately. Mark unimplemented or source-only work
    unrendered and rendered behavior unverified; never load Validation merely to
    state this boundary. Rendered and interaction proof requires a host-provided
@@ -109,8 +115,8 @@ or proof. Greenfield or polished intent alone does not broaden this route.
   flow, hierarchy, layout, readability, states, accessibility structure, or
   responsive behavior that an active Design record has not already settled, or
   when implementation mechanics could violate the settled intent.
-- **Validation:** Load [validation.md](references/validation.md) after an
-  interface change or before claims of rendered/responsive behavior, observed
+- **Validation:** Load [validation.md](references/validation.md) before an
+  interface change, a consistency audit, or claims of rendered/responsive behavior, observed
   interaction, visual quality, or accessibility. Build/source cannot prove
   rendering.
 
@@ -128,6 +134,12 @@ design decision.
 **SOURCE-ONLY AUDIT:** If structure-only, omit Validation; explicitly mark
 rendered/interactive behavior unverified. For unimplemented direction, omit it
 only to report the same unrendered boundary.
+
+For a page-consistency request, use Audit with a consistency focus. Build and
+reconcile an inventory through source, measurement and sight results, including
+lower scroll regions and relevant same-page variants. Follow Validation's
+coverage contract. Missing entries and partial samples prevent an unqualified
+whole-page pass. Audit alone never authorizes repairs.
 
 ## Integrity floor
 

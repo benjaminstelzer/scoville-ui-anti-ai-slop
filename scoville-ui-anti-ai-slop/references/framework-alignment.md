@@ -35,6 +35,12 @@ evidence status. Installation or discovery alone is not evidence of activation.
 Do not fetch mutable third-party skill files or generic design checklists at
 runtime. Prefer installed source and version-matched official documentation.
 
+Before custom styling, record the concrete owner option checked, the unmet
+requirement and why the supported option fails. Preserve source units and
+expressions, including relative units and unitless line-height. A token name or
+equal current pixel value does not establish equivalent behavior. Check final
+overrides and obsolete compensation at the owning layer.
+
 ## Classify the stack
 
 ### Styled design system
