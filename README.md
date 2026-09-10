@@ -119,8 +119,7 @@ only the affected decision for revision instead of silently redesigning the
 screen. Audit-only requests remain read-only. Source-only evidence stays
 source-only rather than becoming a browser result while nobody is looking.
 
-For repository structure and development tools, see
-[maintenance notes](development/docs/maintenance.md).
+Repository validation and retention rules are in [development](development/README.md).
 
 ## Scoville family
 
@@ -147,16 +146,10 @@ needs:
 
 ## Status
 
-The Design/UI ownership boundary has ten active-context composition cases and
-later 3/3 open Validation plus 4/4 consumed Test regressions. These are
-configuration-specific results, not an unseen holdout or broad proof of design
-quality. Earlier 30/30 UI evidence belongs to another package.
-
-See [composition evidence](development/docs/design-composition-evidence.md) and
-[release validation](development/docs/release-validation.md) for exact identities and limits.
-Adding a license to the package does not add behavioral evidence.
-
-Repository development and the current path mapping are in [development/](development/README.md).
+The repository retains deterministic Design/UI composition and regression
+cases. Historical model-run scores are summarized in the changelog; they do
+not qualify the current package or establish rendered quality across products,
+frameworks, and hosts.
 
 ## Sources
 

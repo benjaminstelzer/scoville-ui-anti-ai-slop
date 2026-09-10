@@ -1,20 +1,11 @@
 # Development
 
-The only installable Skill source is [`scoville-ui-anti-ai-slop/`](../scoville-ui-anti-ai-slop/).
-This directory owns repository development and is not an installation package.
+The only installable package is [`scoville-ui-anti-ai-slop/`](../scoville-ui-anti-ai-slop/). Current regression cases in this directory are not installed with the Skill.
 
-## Current layout
+## Validate
 
-Paths recorded before the 2026-09-05 structure change are historical. Use this mapping
-for current local files; frozen evidence retains its original contents and hashes.
+Check Skill frontmatter, UI metadata, package links, and the JSON syntax of `tests/evaluation-cases.json`. Review framework ownership, interaction states, accessibility mechanics, responsive behavior, and Design composition directly against the canonical Skill and references. Case definitions do not establish rendered quality or broad model performance.
 
-| Former repository path | Current repository path |
-| --- | --- |
-| `docs` | `development/docs` |
-| `tests` | `development/tests` |
-| `benchmarks` | `development/benchmarks` |
+## Retention
 
-Run development commands from this directory unless the command specifies otherwise.
-The installable package is one directory above. Tests, when present, run with
-`python -B -m unittest discover -s tests` in the existing development environment.
-This move does not add dependencies or establish new model or host qualification.
+Keep current regression inputs and this maintenance summary. Create benchmark corpora, render iterations, browser state, model outputs, audits, and reviews in temporary storage. Retain evaluation evidence only as a concise repository-owned summary when a published release links it.
