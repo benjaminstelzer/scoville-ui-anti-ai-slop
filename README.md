@@ -52,8 +52,13 @@ support named Skill invocation.
 
 ## Source-first checks and consistency audits
 
-Implementation follows source inspection and correction, measured relationships,
-then a viewed render. Custom styling needs a concrete owner/API justification
+Implementation groups related UI changes before validation. Complete the planned
+edits, then check source, measure affected relationships and view the result.
+Screenshots and measurements follow the completed batch, not each small edit.
+If checks reveal defects, collect the related corrections and validate affected
+concerns after that correction batch is complete.
+
+Custom styling needs a concrete owner/API justification
 before it is written. Authored units and expressions remain distinct from their
 computed pixel values and visible geometry.
 
@@ -64,8 +69,8 @@ The visual routine compares intended edges, text position, apparent whitespace,
 control interiors, icons, wrapping and clipping. Sampling limits remain explicit.
 
 These are instruction changes. Browser and live-agent regression testing of this
-revision is deferred; source checks and an independent review do not establish
-runtime effectiveness.
+revision has not been run. Source and package checks do not establish runtime
+effectiveness.
 
 ## Compatibility
 

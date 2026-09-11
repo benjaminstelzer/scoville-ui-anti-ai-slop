@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.2.2 - 2026-09-11
+
+- Group related UI changes before source checks, measurements and visual
+  inspection. Run validation after the completed batch instead of taking
+  screenshots after each small edit.
+- Group any corrections found during validation and recheck affected concerns
+  after that correction batch is complete. Final evidence still needs to match
+  the final revision, content and state.
+- Browser and live-agent regression testing has not been run for this change.
+
 ## v1.2.1 - 2026-09-10
 
 - Restored the missing list markers in the two preceding changelog entries.

@@ -72,7 +72,9 @@ does not prove the primary populated surface, and the reverse is equally true.
 
 ## Source first, then measurement, then sight
 
-For implementation, complete these gates in order within the affected scope.
+For implementation, batch related UI changes and complete the planned edits
+before running these gates in order within the affected scope. Inspect source
+as needed to guide implementation. Validate at the end of the batch.
 For an audit, inspect and report source defects first, then measure and inspect
 without repairing them. Audit findings never authorize edits.
 
@@ -95,10 +97,15 @@ it fails and the smallest scope. An official token alone does not justify the
 exception. Prefer supported composition and variants. Inspect the final diff
 for unnecessary custom styling and remove compensation made obsolete by the fix.
 
-Every subsequent layout edit repeats the affected source checks, measurements
-and sight checks. Associate final measurements and viewed images with the same
-revision, content and state. Available usable tools cannot be skipped for
-convenience. Missing tools or source limit the conclusion, never create a pass.
+Do not run measurements, screenshots or sight checks after each small layout
+edit. Validate the completed change batch once. If validation reveals defects,
+collect and implement the related corrections before repeating affected source
+checks, measurements and sight checks at the end of that correction batch.
+Later edits invalidate only the affected evidence. Refresh it after those edits
+are complete, before reporting completion. Associate final measurements and
+viewed images with the same revision, content and state. Available usable tools
+cannot be skipped for convenience. Missing tools or source limit the conclusion,
+never create a pass.
 Source-only and screenshot-only requests retain those limits without requiring
 unrequested work. Preserve every known required gap in the result.
 
@@ -157,7 +164,8 @@ If the optical question cannot be resolved, report it unverified.
 native heights and padding. Verify their intended variants before treating
 their difference as a defect. Do not override native internals for symmetry.
 
-Recheck relevant widths, expanded text and affected states after correction.
+Recheck relevant widths, expanded text and affected states after the correction
+batch is complete.
 Zoom alone does not test whether `em`, `rem` and fixed pixels behave equivalently.
 Where units are at risk, vary element/root font conditions independently.
 

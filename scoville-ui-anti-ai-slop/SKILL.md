@@ -86,10 +86,13 @@ or reverify siblings.
 5. Make the smallest framework-valid change. If a real implementation
    constraint conflicts with Design, report it against the affected record;
    Design revises that decision and UI re-implements it. Do not silently redesign.
-6. Before the first layout measurement or viewed render, inspect generating
-   code and CSS and correct known in-scope implementation defects. Then measure
-   actual geometry, then view the result. Repeat affected gates after each
-   layout edit. Audit reports source defects first and continues read-only.
+6. Batch related UI changes before validation. Inspect generating code and CSS
+   to guide implementation, then complete the planned edits before running
+   affected source checks, measuring actual geometry and viewing the result.
+   Do not measure or capture screenshots after every small edit. If validation
+   reveals defects, batch the corrections and recheck affected concerns once
+   that correction batch is complete. Audit reports source defects first and
+   continues read-only.
    Preserve authored units/expressions separately from computed pixels.
    Justify custom styling before writing it against a concrete owner gap.
    Verify only relevant rendered conditions able to disprove. Report rendered, source,
