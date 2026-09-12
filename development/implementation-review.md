@@ -1,10 +1,17 @@
-# Source-first implementation review
+# Why source inspection comes first
 
-The source review on 2026-09-10 covered source ordering, justification for
-custom styling, independent measurement expectations, authored units, visual
-comparisons and consistency across repeated components. It also examined how
-Scoville UI and WordPress Backend UI work independently or together.
+The change followed reported spacing inconsistencies, unequal element heights
+and misaligned text despite use of the UI Skills. The earlier instructions
+could leave source inspection conditional and rely on visual inspection before
+asking whether the implementation itself was wrong.
 
-Selected Classic source declarations were inspected. No browser, live-agent or
-fixture tests were run. Instruction effectiveness remains unverified.
-PLAN-0001/W-002 retains the deferred regressions at the user's request.
+The revised order checks the generating code first, then measures and views the
+result. The reason is practical: a local CSS adjustment can make a screenshot
+look better while leaving the wrong component or spacing rule in charge.
+Measurements and visual inspection are still needed because correct source
+alone cannot establish the final layout.
+
+The [decision](docs/decisions/0001-check-source-before-rendered-validation.md)
+records that reasoning. The reported failures were not independently reproduced
+in this review. Browser and agent regression work remains deferred in
+[the plan](docs/plans/0001-source-first-ui-validation.md).

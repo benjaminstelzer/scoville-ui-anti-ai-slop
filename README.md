@@ -1,35 +1,22 @@
 # Scoville UI Anti-AI-Slop
 
-A polished interface can still lose the user's task. Scoville UI keeps that
-task visible while the pixels negotiate among themselves.
+A good desktop screenshot does not tell you whether someone can use the page.
+The main action may disappear on mobile, keyboard focus may be missing, or an
+error may leave the user with no way forward.
 
-It usually looks harmless:
+Scoville UI helps implement and audit interfaces through the framework and
+design system the product already uses. It covers components, interaction
+states, responsive behavior and accessibility, then asks for evidence from the
+actual rendered interface.
 
-- A product with an established design system receives a fresh local language
-  of rounded cards, gradients, and pills because this screen wanted a journey.
-- Primary, secondary, and destructive actions all receive equal emphasis. The
-  hierarchy is now democratic and therefore useless.
-- The happy path looks polished. Loading, empty, error, focus, keyboard, and
-  long-content states have quietly missed the launch.
-- The desktop screenshot is excellent. On mobile, the primary action lives
-  beyond a horizontal scroll that users can discover through archaeology.
-
-That is UI slop: familiar polish substitutes for the task, the product's visual
-owner, and rendered evidence. The gradient survived. The task did not.
-
-Scoville UI is a framework-aware Agent Skill for implementing and auditing
-interfaces through the product framework and incumbent design system. It owns
-supported components, states, semantics, focus and input behavior,
-announcements, responsive mechanics, and rendered evidence. When Scoville
-Design is active and applicable, UI consumes its design decisions without
-re-deciding them. Otherwise UI retains a bounded standalone Greenfield
-fallback. It does not activate for backend-only work or wording alone.
+When Scoville Design is active, UI implements its design decisions. Otherwise
+it can develop a bounded direction for a new interface. Backend-only work and
+wording alone do not activate it.
 
 ## Why "Scoville"?
 
-The family is named for useful signal that remains detectable after dilution. In UI work, the
-heat is the user's task - primary action, state, reading order, and error
-recovery - not making every button look ready for a chili-eating contest.
+The family is named for useful signal that remains detectable after dilution.
+In UI, that means keeping the user's task clear across screen sizes, interaction states and visual choices.
 
 ## How to use
 
@@ -67,9 +54,6 @@ of its regions, variants and relevant states, including content below the fold.
 Every entry maps to source, measurement and visual evidence or a named gap.
 The visual routine compares intended edges, text position, apparent whitespace,
 control interiors, icons, wrapping and clipping. Sampling limits remain explicit.
-
-These are instruction changes. Browser and live-agent regression testing of this
-revision has not been run.
 
 ## Compatibility
 
@@ -121,7 +105,7 @@ Preserve existing customizations and ask before overwriting conflicting files. R
 - **Real states exist.** Loading, empty, error, disabled, success, focus,
   keyboard, and touch behavior are covered when relevant.
 - **Responsive means adapted.** The task survives narrow, wide, zoomed, and
-  content-heavy conditions rather than merely shrinking politely.
+  content-heavy conditions rather than just scaling down the desktop layout.
 - **Accessibility is structural.** Reading order, names, relationships,
   contrast, focus, and input behavior are checked in their real context.
 - **Evidence matches the claim.** Source inspection can prove structure.
@@ -137,26 +121,21 @@ record, and the requested implementation outcome. It then loads only the
 framework-alignment, UI-quality, or rendered-validation guidance that applies.
 UI never searches for or simulates Design. A real framework constraint returns
 only the affected decision for revision instead of silently redesigning the
-screen. Audit-only requests remain read-only. Source-only evidence stays
-source-only rather than becoming a browser result while nobody is looking.
-
-Repository validation and retention rules are in [development](development/README.md).
+screen. Audit-only requests remain read-only. Browser behavior needs a check in the browser.
 
 ## How it was developed
 
-UI developed through interface work, routing tests and comparisons of how
-agents use the instructions. Earlier
-[optimization runs](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/blob/3b054c35187437743e6994aad1a2d42bac228e53/CHANGELOG.md)
-examined selective reference loading and the Design/UI boundary. SkillOpt
-found no improving candidate in one of those runs, so the revised source
-was retained.
+UI developed through interface work and comparisons of how agents use the
+instructions. One recurring problem was checking the rendered page before
+understanding which component or CSS rule owned it. Another was interrupting
+related edits with repeated screenshots. The [changelog](CHANGELOG.md) follows
+the changes to source inspection and validation after a completed batch.
 
-I analyze complete interface-task histories to see where framework ownership
-holds, where checks miss the result, and where repeated reads or screenshots
-consume tokens without helping. The [changelog](CHANGELOG.md) records later
-source-first checks and validation after related edits are complete. These
-changes come from an ongoing cycle of use and revision. The latest batching
-change still lacks browser and live-agent regression evidence.
+I read task histories alongside the interface to see which checks help and
+which merely repeat work. Earlier
+[optimization runs](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/blob/3b054c35187437743e6994aad1a2d42bac228e53/CHANGELOG.md)
+also explored selective loading and the boundary with Design. When SkillOpt
+found no better candidate, I kept the existing instructions.
 
 ## Scoville family
 
@@ -183,10 +162,8 @@ needs:
 
 ## Status
 
-The repository retains deterministic Design/UI composition and regression
-cases. Historical model-run scores are summarized in the changelog; they do
-not qualify the current package or establish rendered quality across products,
-frameworks, and hosts.
+The latest change to validation after related edits has not yet been tested
+in a browser or through a live agent regression run.
 
 ## Sources
 

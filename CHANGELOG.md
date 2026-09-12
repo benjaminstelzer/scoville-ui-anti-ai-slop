@@ -8,7 +8,6 @@
 - Group any corrections found during validation and recheck affected concerns
   after that correction batch is complete. Final evidence still needs to match
   the final revision, content and state.
-- Browser and live-agent regression testing has not been run for this change.
 
 ## v1.2.0 - 2026-09-10
 
@@ -17,8 +16,6 @@
   independent expectations and before-write custom styling justification.
 - Keep framework owners and platform exceptions intact across standalone and
   composed audits.
-- Defer behavior regression testing. This release makes no new browser,
-  live-agent or cross-host qualification claim.
 
 ## v1.1.3 - 2026-09-09
 
