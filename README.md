@@ -186,3 +186,19 @@ frameworks, and hosts.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## How it was developed
+
+UI developed through interface work, routing tests and comparisons of how
+agents use the instructions. Earlier
+[optimization runs](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/blob/3b054c35187437743e6994aad1a2d42bac228e53/CHANGELOG.md)
+examined selective reference loading and the Design/UI boundary. SkillOpt
+found no improving candidate in one of those runs, so the revised source
+was retained.
+
+I analyze complete interface-task histories to see where framework ownership
+holds, where checks miss the result, and where repeated reads or screenshots
+consume tokens without helping. The [changelog](CHANGELOG.md) records later
+source-first checks and validation after related edits are complete. These
+changes come from an ongoing cycle of use and revision. The latest batching
+change still lacks browser and live-agent regression evidence.
