@@ -10,11 +10,6 @@
   the final revision, content and state.
 - Browser and live-agent regression testing has not been run for this change.
 
-## v1.2.1 - 2026-09-10
-
-- Restored the missing list markers in the two preceding changelog entries.
-  The installable Skill is unchanged.
-
 ## v1.2.0 - 2026-09-10
 
 - Require source correction before measurement and viewed-render checks. Add a
@@ -24,11 +19,6 @@
   composed audits.
 - Defer behavior regression testing. This release makes no new browser,
   live-agent or cross-host qualification claim.
-
-## v1.1.4 - 2026-09-10
-
-- Removed development-only material and narrowed changelog scope. No Skill
-  behavior changed in that release.
 
 ## v1.1.3 - 2026-09-09
 

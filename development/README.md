@@ -4,7 +4,7 @@ The only installable package is [`scoville-ui-anti-ai-slop/`](../scoville-ui-ant
 
 ## Validate
 
-Check Skill frontmatter, UI metadata, package links, and the JSON syntax of `tests/evaluation-cases.json`. Review framework ownership, interaction states, accessibility mechanics, responsive behavior, and Design composition directly against the canonical Skill and references. Case definitions do not establish rendered quality or broad model performance.
+Review framework ownership, interaction states, accessibility mechanics, responsive behavior, and Design composition directly against the canonical Skill and references. Case definitions do not establish rendered quality or broad model performance.
 
 ## Retention
 

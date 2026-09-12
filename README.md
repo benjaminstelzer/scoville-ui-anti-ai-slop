@@ -69,8 +69,7 @@ The visual routine compares intended edges, text position, apparent whitespace,
 control interiors, icons, wrapping and clipping. Sampling limits remain explicit.
 
 These are instruction changes. Browser and live-agent regression testing of this
-revision has not been run. Source and package checks do not establish runtime
-effectiveness.
+revision has not been run.
 
 ## Compatibility
 
@@ -143,6 +142,22 @@ source-only rather than becoming a browser result while nobody is looking.
 
 Repository validation and retention rules are in [development](development/README.md).
 
+## How it was developed
+
+UI developed through interface work, routing tests and comparisons of how
+agents use the instructions. Earlier
+[optimization runs](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/blob/3b054c35187437743e6994aad1a2d42bac228e53/CHANGELOG.md)
+examined selective reference loading and the Design/UI boundary. SkillOpt
+found no improving candidate in one of those runs, so the revised source
+was retained.
+
+I analyze complete interface-task histories to see where framework ownership
+holds, where checks miss the result, and where repeated reads or screenshots
+consume tokens without helping. The [changelog](CHANGELOG.md) records later
+source-first checks and validation after related edits are complete. These
+changes come from an ongoing cycle of use and revision. The latest batching
+change still lacks browser and live-agent regression evidence.
+
 ## Scoville family
 
 Each Skill works independently. Combine only the concerns the task actually
@@ -186,19 +201,3 @@ frameworks, and hosts.
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
-## How it was developed
-
-UI developed through interface work, routing tests and comparisons of how
-agents use the instructions. Earlier
-[optimization runs](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop/blob/3b054c35187437743e6994aad1a2d42bac228e53/CHANGELOG.md)
-examined selective reference loading and the Design/UI boundary. SkillOpt
-found no improving candidate in one of those runs, so the revised source
-was retained.
-
-I analyze complete interface-task histories to see where framework ownership
-holds, where checks miss the result, and where repeated reads or screenshots
-consume tokens without helping. The [changelog](CHANGELOG.md) records later
-source-first checks and validation after related edits are complete. These
-changes come from an ongoing cycle of use and revision. The latest batching
-change still lacks browser and live-agent regression evidence.
